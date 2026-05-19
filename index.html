@@ -1,0 +1,4464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free FAA Part 107 study guide with practice questions, sectional chart help, airspace rules, weather decoding, checklists, and official FAA resources."
+    />
+    <meta
+      name="keywords"
+      content="Part 107 study guide, FAA Part 107, remote pilot certificate, drone license, Part 107 practice test, sectional charts, sUAS"
+    />
+    <meta name="author" content="Part107.wiki" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#60a5fa" />
+    <meta
+      property="og:title"
+      content="Free FAA Part 107 Study Guide, Practice Quiz & Resources"
+    />
+    <meta
+      property="og:description"
+      content="Study for the FAA Remote Pilot Certificate with free modules, randomized practice questions, sectional chart help, checklists, and official FAA resources."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Part107.wiki" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Free FAA Part 107 Study Guide, Practice Quiz & Resources"
+    />
+    <meta
+      name="twitter:description"
+      content="Free Part 107 study modules, practice quiz, sectional chart help, weather decoding, and FAA resources."
+    />
+    <title>
+      Free FAA Part 107 Study Guide, Practice Quiz & Resources | Part107.wiki
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Part107.wiki",
+            "description": "A free FAA Part 107 study hub for remote pilot certificate preparation."
+          },
+          {
+            "@type": "LearningResource",
+            "name": "Free FAA Part 107 Study Guide",
+            "description": "Free study modules, practice questions, checklists, sectional chart help, weather decoding, and official FAA resources for the Remote Pilot Certificate knowledge test.",
+            "learningResourceType": "Study guide",
+            "educationalLevel": "Adult education",
+            "teaches": [
+              "FAA Part 107 regulations",
+              "National Airspace System",
+              "VFR sectional chart reading",
+              "Aviation weather",
+              "Remote ID and registration",
+              "Crew resource management",
+              "Emergency procedures"
+            ],
+            "audience": {
+              "@type": "EducationalAudience",
+              "educationalRole": "student"
+            },
+            "provider": {
+              "@type": "Organization",
+              "name": "Part107.wiki"
+            },
+            "isAccessibleForFree": true,
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the FAA Part 107 certificate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The FAA Part 107 certificate, formally the Remote Pilot Certificate, allows a person to operate small unmanned aircraft systems for non-recreational purposes in the United States."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many questions are on the Part 107 test?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The initial FAA Part 107 knowledge test has 60 multiple-choice questions. A passing score is 70 percent or higher."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does the Part 107 test cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The FAA Part 107 initial knowledge test is commonly listed at 175 dollars at FAA-approved PSI testing centers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I study most for the Part 107 test?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "High-yield Part 107 study areas include airspace, sectional chart reading, weather reports and forecasts, Part 107 operating rules, Remote ID, crew resource management, and emergency procedures."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are sectional charts on the Part 107 test?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Part 107 applicants should know how to read VFR sectional charts, including airspace boundaries, airport symbols, latitude and longitude, maximum elevation figures, and charted hazards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long is Part 107 recurrent training valid?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Remote pilots must maintain currency by completing recurrent training every 24 calendar months."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --bg: #0b0f17;
+        --bg-elev: #131927;
+        --bg-card: #182032;
+        --border: #233047;
+        --border-strong: #2e3d5a;
+        --text: #e6ecf5;
+        --text-dim: #93a1bd;
+        --text-muted: #6c7a96;
+        --accent: #60a5fa;
+        --accent-2: #4ade80;
+        --warn: #fbbf24;
+        --danger: #f87171;
+        --link: #7dd3fc;
+        --radius: 10px;
+        --radius-sm: 6px;
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
+        --mono:
+          ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        --sans:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+      [data-theme="light"] {
+        --bg: #f7f8fb;
+        --bg-elev: #ffffff;
+        --bg-card: #ffffff;
+        --border: #e3e7ef;
+        --border-strong: #cdd5e1;
+        --text: #0f1828;
+        --text-dim: #4b5874;
+        --text-muted: #6b7790;
+        --accent: #2563eb;
+        --accent-2: #16a34a;
+        --link: #0369a1;
+        --shadow:
+          0 1px 2px rgba(15, 24, 40, 0.06), 0 8px 24px rgba(15, 24, 40, 0.06);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      code {
+        font-family: var(--mono);
+        background: var(--bg-elev);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.92em;
+        border: 1px solid var(--border);
+      }
+      kbd {
+        font-family: var(--mono);
+        background: var(--bg-elev);
+        border: 1px solid var(--border-strong);
+        border-bottom-width: 2px;
+        padding: 1px 6px;
+        border-radius: 4px;
+        font-size: 0.85em;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 32px 0;
+      }
+
+      /* Layout */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(11, 15, 23, 0.85);
+        backdrop-filter: saturate(180%) blur(10px);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+      [data-theme="light"] .topbar {
+        background: rgba(247, 248, 251, 0.85);
+      }
+      .topbar-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+      .brand-logo {
+        width: 28px;
+        height: 28px;
+        border-radius: 7px;
+        background: var(--accent);
+        display: grid;
+        place-items: center;
+        color: white;
+        font-weight: 900;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+      }
+      .topbar-search {
+        flex: 1;
+        max-width: 520px;
+        position: relative;
+      }
+      .topbar-search input {
+        width: 100%;
+        background: var(--bg-card);
+        color: var(--text);
+        border: 1px solid var(--border);
+        padding: 9px 12px 9px 36px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .topbar-search input:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.18);
+      }
+      .topbar-search::before {
+        content: "⌕";
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-muted);
+        font-size: 1.05rem;
+      }
+      .topbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .mobile-nav {
+        display: none;
+        border-top: 1px solid var(--border);
+      }
+      .mobile-nav-scroll {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 8px 20px;
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      .mobile-nav a {
+        flex: 0 0 auto;
+        padding: 7px 10px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--bg-card);
+        color: var(--text-dim);
+        font-size: 0.84rem;
+        line-height: 1;
+      }
+      .mobile-nav a:hover,
+      .mobile-nav a.active {
+        border-color: var(--accent);
+        color: var(--text);
+        text-decoration: none;
+      }
+      .btn {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        color: var(--text);
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition:
+          border-color 0.15s ease,
+          background 0.15s ease;
+      }
+      .btn:hover {
+        border-color: var(--border-strong);
+      }
+      .btn-primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #08111e;
+        font-weight: 600;
+      }
+      [data-theme="light"] .btn-primary {
+        color: #ffffff;
+      }
+      .btn-primary:hover {
+        filter: brightness(1.05);
+      }
+      .btn-ghost {
+        background: transparent;
+      }
+
+      /* Page */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 24px 20px 80px;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 32px;
+      }
+      @media (max-width: 960px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          display: none;
+        }
+        .mobile-nav {
+          display: block;
+        }
+        section {
+          scroll-margin-top: 132px;
+        }
+      }
+
+      /* Sidebar */
+      .sidebar {
+        position: sticky;
+        top: 76px;
+        align-self: start;
+        max-height: calc(100vh - 96px);
+        overflow: auto;
+        padding-right: 8px;
+      }
+      .sidebar h4 {
+        margin: 18px 0 8px;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        font-weight: 700;
+      }
+      .sidebar h4:first-child {
+        margin-top: 0;
+      }
+      .sidebar a {
+        display: block;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+      .sidebar a:hover {
+        background: var(--bg-card);
+        color: var(--text);
+        text-decoration: none;
+      }
+      .sidebar a.active {
+        background: var(--bg-card);
+        color: var(--text);
+        border-left: 2px solid var(--accent);
+        padding-left: 8px;
+      }
+
+      /* Hero */
+      .hero {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 36px 32px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .hero h1 {
+        margin: 0 0 8px;
+        font-size: 2.1rem;
+        letter-spacing: -0.01em;
+      }
+      .hero .lede {
+        color: var(--text-dim);
+        font-size: 1.05rem;
+        max-width: 720px;
+        margin: 0 0 18px;
+      }
+      .hero .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+      }
+      .hero .meta b {
+        color: var(--text);
+      }
+      .hero .ctas {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+
+      /* Stat row */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: 20px 0 8px;
+      }
+      @media (max-width: 700px) {
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .stat {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px;
+      }
+      .stat .v {
+        font-size: 1.35rem;
+        font-weight: 700;
+      }
+      .stat .l {
+        color: var(--text-muted);
+        font-size: 0.82rem;
+      }
+
+      /* Card / Section */
+      section {
+        scroll-margin-top: 80px;
+      }
+      .card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px 24px;
+        margin: 14px 0 22px;
+      }
+      .card h2 {
+        margin: 0 0 6px;
+        font-size: 1.4rem;
+        letter-spacing: -0.005em;
+      }
+      .card .sub {
+        color: var(--text-dim);
+        margin: 0 0 16px;
+        font-size: 0.95rem;
+      }
+      .card h3 {
+        margin: 22px 0 8px;
+        font-size: 1.05rem;
+        color: var(--text);
+      }
+      .card p {
+        margin: 8px 0;
+        color: var(--text);
+      }
+      .card ul,
+      .card ol {
+        padding-left: 20px;
+      }
+      .card li {
+        margin: 4px 0;
+      }
+
+      /* Pills/Tags */
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        color: var(--text-dim);
+        font-size: 0.75rem;
+        margin-right: 6px;
+      }
+      .pill.warn {
+        color: var(--warn);
+        border-color: rgba(251, 191, 36, 0.35);
+      }
+      .pill.ok {
+        color: var(--accent-2);
+        border-color: rgba(74, 222, 128, 0.35);
+      }
+      .pill.danger {
+        color: var(--danger);
+        border-color: rgba(248, 113, 113, 0.35);
+      }
+      .pill.info {
+        color: var(--accent);
+        border-color: rgba(96, 165, 250, 0.35);
+      }
+
+      /* Module grid */
+      .modgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 12px;
+        margin: 14px 0;
+      }
+      .modcard {
+        display: block;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 16px;
+        color: inherit;
+        transition:
+          transform 0.12s ease,
+          border-color 0.12s ease;
+      }
+      .modcard:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+        text-decoration: none;
+      }
+      .modcard .num {
+        color: var(--text-muted);
+        font-size: 0.78rem;
+        font-family: var(--mono);
+      }
+      .modcard .name {
+        font-weight: 600;
+        margin: 4px 0 4px;
+      }
+      .modcard .desc {
+        color: var(--text-dim);
+        font-size: 0.88rem;
+      }
+
+      /* Resource directory */
+      .resgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 14px;
+        margin: 12px 0;
+      }
+      .rescat {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px 18px;
+      }
+      .rescat h3 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .rescat h3 .ico {
+        width: 26px;
+        height: 26px;
+        border-radius: 6px;
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        display: grid;
+        place-items: center;
+        font-family: "Material Symbols Outlined";
+        font-size: 1.05rem;
+        font-weight: normal;
+        line-height: 1;
+        color: var(--text-dim);
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 500,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .rescat ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .rescat li {
+        padding: 7px 0;
+        border-bottom: 1px dashed var(--border);
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .rescat li:last-child {
+        border-bottom: 0;
+      }
+      .rescat li a {
+        font-weight: 500;
+      }
+      .rescat li .note {
+        color: var(--text-muted);
+        font-size: 0.78rem;
+      }
+
+      /* Tables */
+      .table-wrap {
+        overflow-x: auto;
+        margin: 12px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        font-size: 0.92rem;
+      }
+      th,
+      td {
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      th {
+        background: var(--bg-card);
+        color: var(--text-dim);
+        font-weight: 600;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      /* Callouts */
+      .callout {
+        border-left: 3px solid var(--accent);
+        background: var(--bg-elev);
+        padding: 12px 14px;
+        border-radius: 0 8px 8px 0;
+        margin: 14px 0;
+        font-size: 0.95rem;
+      }
+      .callout.warn {
+        border-color: var(--warn);
+      }
+      .callout.danger {
+        border-color: var(--danger);
+      }
+      .callout.ok {
+        border-color: var(--accent-2);
+      }
+      .callout b {
+        color: var(--text);
+      }
+
+      /* Checklist */
+      .checklist {
+        list-style: none;
+        padding: 0;
+        margin: 8px 0;
+      }
+      .checklist li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 8px 10px;
+        border-radius: 6px;
+        transition: background 0.12s ease;
+      }
+      .checklist li:hover {
+        background: var(--bg-elev);
+      }
+      .checklist input[type="checkbox"] {
+        margin-top: 4px;
+        accent-color: var(--accent);
+        flex: 0 0 auto;
+        width: 16px;
+        height: 16px;
+      }
+      .checklist label {
+        cursor: pointer;
+      }
+      .checklist .done label {
+        text-decoration: line-through;
+        color: var(--text-muted);
+      }
+
+      /* Quiz */
+      .quiz-shell {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px 24px;
+      }
+      .quiz-progress {
+        height: 6px;
+        background: var(--bg-elev);
+        border-radius: 999px;
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+      .quiz-progress > div {
+        height: 100%;
+        background: var(--accent);
+        width: 0%;
+        transition: width 0.25s ease;
+      }
+      .quiz-meta {
+        display: flex;
+        justify-content: space-between;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        margin-bottom: 14px;
+      }
+      .quiz-q {
+        font-size: 1.05rem;
+        margin: 0 0 12px;
+      }
+      .quiz-options {
+        display: grid;
+        gap: 8px;
+      }
+      .quiz-opt {
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 10px 14px;
+        cursor: pointer;
+        text-align: left;
+        color: var(--text);
+        transition:
+          border-color 0.12s ease,
+          background 0.12s ease;
+        font-size: 0.95rem;
+      }
+      .quiz-opt:hover {
+        border-color: var(--accent);
+      }
+      .quiz-opt.correct {
+        border-color: var(--accent-2);
+        background: rgba(74, 222, 128, 0.08);
+      }
+      .quiz-opt.wrong {
+        border-color: var(--danger);
+        background: rgba(248, 113, 113, 0.08);
+      }
+      .quiz-opt[disabled] {
+        cursor: default;
+      }
+      .quiz-rationale {
+        margin-top: 14px;
+        padding: 12px 14px;
+        background: var(--bg-elev);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 8px 8px 0;
+        font-size: 0.92rem;
+        color: var(--text-dim);
+        display: none;
+      }
+      .quiz-rationale.show {
+        display: block;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+        justify-content: space-between;
+      }
+      .quiz-result {
+        text-align: center;
+        padding: 24px 16px;
+      }
+      .quiz-result .score {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: var(--accent);
+      }
+      .quiz-result .pf {
+        font-size: 1.1rem;
+        margin: 4px 0 12px;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 60px;
+        padding: 32px 20px;
+        border-top: 1px solid var(--border);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      footer a {
+        color: var(--text-dim);
+      }
+
+      /* Hide for search filtering */
+      .hide-by-search {
+        display: none !important;
+      }
+
+      /* Anchor links inline */
+      h2 .hash,
+      h3 .hash {
+        color: var(--text-muted);
+        margin-left: 6px;
+        opacity: 0;
+        font-weight: 400;
+        transition: opacity 0.15s ease;
+      }
+      h2:hover .hash,
+      h3:hover .hash {
+        opacity: 1;
+      }
+
+      /* Print */
+      @media print {
+        .topbar,
+        .mobile-nav,
+        .sidebar,
+        .quiz-shell,
+        .ctas,
+        .topbar-actions {
+          display: none !important;
+        }
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          break-inside: avoid;
+          box-shadow: none;
+          border-color: #ccc;
+        }
+        body {
+          background: white;
+          color: black;
+        }
+      }
+      @media (max-width: 760px) {
+        .topbar-inner {
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px 14px;
+        }
+        .brand {
+          flex: 1 1 auto;
+          min-width: 0;
+        }
+        .brand > span:last-child {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .topbar-actions a {
+          display: none;
+        }
+        .topbar-search {
+          flex: 1 0 100%;
+          order: 3;
+          max-width: none;
+        }
+        .mobile-nav-scroll {
+          padding: 8px 14px;
+        }
+        .container {
+          padding: 16px 14px 64px;
+        }
+        .hero {
+          padding: 24px 18px;
+          border-radius: var(--radius);
+        }
+        .hero h1 {
+          font-size: 1.75rem;
+        }
+        .hero .lede {
+          font-size: 0.98rem;
+        }
+        .hero .meta {
+          gap: 8px;
+        }
+        .hero .ctas,
+        .quiz-controls {
+          flex-direction: column;
+        }
+        .hero .ctas .btn,
+        .quiz-controls .btn {
+          width: 100%;
+          text-align: center;
+        }
+        .card,
+        .quiz-shell {
+          padding: 18px 16px;
+        }
+        .modgrid,
+        .resgrid {
+          grid-template-columns: 1fr;
+        }
+        .quiz-meta {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+      @media (max-width: 420px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+        .brand-logo {
+          width: 26px;
+          height: 26px;
+          font-size: 0.82rem;
+        }
+        .btn {
+          padding: 8px 10px;
+        }
+        .card h2 {
+          font-size: 1.22rem;
+        }
+        th,
+        td {
+          padding: 8px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="brand-logo">P7</span>
+          <span>Part107.wiki</span>
+        </div>
+        <div class="topbar-search">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search modules, resources, terms…  ( / )"
+            aria-label="Search"
+          />
+        </div>
+        <div class="topbar-actions">
+          <button
+            class="btn btn-ghost"
+            id="themeToggle"
+            title="Toggle theme"
+            aria-label="Toggle theme"
+          >
+            ◐
+          </button>
+          <a class="btn" href="#quiz">Practice Quiz</a>
+          <a class="btn btn-primary" href="#resources">Resources</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile section navigation">
+        <div class="mobile-nav-scroll">
+          <a href="#overview">Start</a>
+          <a href="#how-to-study">Study Plan</a>
+          <a href="#exam-basics">Exam</a>
+          <a href="#m-regs">Regs</a>
+          <a href="#m-airspace">Airspace</a>
+          <a href="#m-charts">Charts</a>
+          <a href="#m-weather">Weather</a>
+          <a href="#m-ops">Ops</a>
+          <a href="#m-rid">Remote ID</a>
+          <a href="#m-waivers">LAANC</a>
+          <a href="#quiz">Quiz</a>
+          <a href="#resources">Resources</a>
+          <a href="#faq">FAQ</a>
+          <a href="#glossary">Glossary</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="layout">
+        <aside class="sidebar" id="sidebar">
+          <h4>Get Started</h4>
+          <a href="#overview">What is Part 107?</a>
+          <a href="#how-to-study">How to Study</a>
+          <a href="#exam-basics">Exam Basics</a>
+
+          <h4>Knowledge Modules</h4>
+          <a href="#m-regs">1. Regulations &amp; Cert</a>
+          <a href="#m-airspace">2. Airspace</a>
+          <a href="#m-charts">3. Sectional Charts</a>
+          <a href="#m-weather">4. Weather</a>
+          <a href="#m-loading">5. Loading &amp; Performance</a>
+          <a href="#m-emerg">6. Emergency Procedures</a>
+          <a href="#m-crm">7. CRM &amp; ADM</a>
+          <a href="#m-radio">8. Radio Communications</a>
+          <a href="#m-physio">9. Physiological Factors</a>
+          <a href="#m-maint">10. Maintenance &amp; Preflight</a>
+          <a href="#m-ops">11. Operations</a>
+          <a href="#m-rid">12. Remote ID &amp; Registration</a>
+          <a href="#m-waivers">13. Waivers &amp; LAANC</a>
+          <a href="#m-accident">14. Accident Reporting</a>
+
+          <h4>Tools</h4>
+          <a href="#quiz">Practice Quiz</a>
+          <a href="#checklist-registration">Registration Checklist</a>
+          <a href="#checklist-preflight">Preflight Checklist</a>
+          <a href="#checklist-examday">Exam Day Checklist</a>
+
+          <h4>Directories</h4>
+          <a href="#resources">Curated Resources</a>
+          <a href="#apps">Apps &amp; Tools</a>
+          <a href="#communities">Communities</a>
+          <a href="#faq">FAQ</a>
+          <a href="#glossary">Glossary</a>
+          <a href="#qc">Quality Control</a>
+          <a href="#contribute">Contribute</a>
+        </aside>
+
+        <main>
+          <!-- HERO -->
+          <section class="hero" id="top">
+            <h1>The free, modern Part 107 study hub.</h1>
+            <p class="lede">
+              Everything you need to pass the FAA Remote Pilot Certificate
+              (sUAS) knowledge test - curated official resources, plain-language
+              study modules, practice questions with rationales, and exam-day
+              checklists. Built in the spirit of FMHY: open, organized, no
+              paywalls.
+            </p>
+            <div class="meta">
+              <span
+                ><b>Test:</b> 60 questions · multiple choice · 2 hours · 70% to
+                pass</span
+              >
+              <span><b>Cost:</b> $175 at a PSI testing center</span>
+              <span
+                ><b>Renewal:</b> Free online recurrent training every 24
+                months</span
+              >
+            </div>
+            <div class="ctas">
+              <a class="btn btn-primary" href="#how-to-study"
+                >Start a study plan</a
+              >
+              <a class="btn" href="#quiz">Take the practice quiz</a>
+              <a class="btn" href="#resources">Browse resources</a>
+            </div>
+          </section>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="v">14</div>
+              <div class="l">Knowledge modules</div>
+            </div>
+            <div class="stat">
+              <div class="v">55</div>
+              <div class="l">Curated links</div>
+            </div>
+            <div class="stat">
+              <div class="v">38</div>
+              <div class="l">Practice questions</div>
+            </div>
+            <div class="stat">
+              <div class="v">100%</div>
+              <div class="l">Free, no signup</div>
+            </div>
+          </div>
+
+          <!-- OVERVIEW -->
+          <section id="overview">
+            <div class="card">
+              <h2>What is Part 107? <a class="hash" href="#overview">#</a></h2>
+              <p class="sub">
+                14 CFR Part 107 is the FAA rule that governs the commercial
+                operation of small Unmanned Aircraft Systems (sUAS) under 55 lb
+                in the U.S. National Airspace System (NAS).
+              </p>
+              <h3>Who needs the certificate?</h3>
+              <p>
+                Anyone who flies a drone
+                <b>for any non-recreational purpose</b> - paid photography,
+                mapping, real estate, inspections, even unpaid
+                commercial-adjacent work or content posted on a monetized
+                channel - must hold a Remote Pilot Certificate with a sUAS
+                rating.
+              </p>
+              <h3>Who doesn't?</h3>
+              <p>
+                Strictly recreational flyers operate under
+                <b>49 USC §44809</b> and must instead pass the free
+                <b>TRUST</b> (The Recreational UAS Safety Test). TRUST is not a
+                substitute for Part 107.
+              </p>
+              <h3>Eligibility</h3>
+              <ul>
+                <li>At least 16 years old</li>
+                <li>Able to read, speak, write, and understand English</li>
+                <li>Physically and mentally fit to safely operate a sUAS</li>
+                <li>Pass the Part 107 initial knowledge test ("UAG")</li>
+                <li>
+                  Apply via IACRA -> FAA issues a temporary, then permanent
+                  certificate
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- HOW TO STUDY -->
+          <section id="how-to-study">
+            <div class="card">
+              <h2>
+                How to study (proven, free path)
+                <a class="hash" href="#how-to-study">#</a>
+              </h2>
+              <p class="sub">
+                A realistic 2-3 week plan that has worked for thousands of
+                pilots.
+              </p>
+              <ol>
+                <li>
+                  <b>Day 1-2 - Frame the test.</b> Read the
+                  <a
+                    href="https://www.faa.gov/training_testing/testing/acs/media/uas_acs.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >FAA Remote Pilot ACS</a
+                  >
+                  cover-to-cover. This is the official roadmap - every question
+                  on the exam maps to a task in this PDF.
+                </li>
+                <li>
+                  <b>Day 3-10 - Learn the content.</b> Work through the 14
+                  modules below (or a free YouTube course like Tony Northrup's).
+                  Focus on <b>airspace, sectional charts, and weather</b>;
+                  together they make up roughly 35-45% of the test.
+                </li>
+                <li>
+                  <b>Day 11-14 - Drill practice questions.</b> The single
+                  biggest predictor of passing is reps. Use this hub's quiz plus
+                  the official FAA sample questions and the free practice links
+                  below. Score 85%+ consistently before booking the test.
+                </li>
+                <li>
+                  <b>Day 15 - Review weak spots.</b> Re-read sections of the FAA
+                  <a
+                    href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airman_testing/remote_pilot_study_guide.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Remote Pilot Study Guide</a
+                  >
+                  for any topic where you're under 80%.
+                </li>
+                <li>
+                  <b>Day 16 - Take the exam.</b> Bring two forms of ID. Allow
+                  ~90 minutes. You'll get an immediate score.
+                </li>
+              </ol>
+              <div class="callout">
+                <b>Pro tip.</b> Don't memorize answers - memorize the
+                <i>process</i> for reading sectional charts and decoding METARs.
+                The test reuses techniques on novel charts/excerpts, so rote
+                answers fail.
+              </div>
+            </div>
+          </section>
+
+          <!-- EXAM BASICS -->
+          <section id="exam-basics">
+            <div class="card">
+              <h2>Exam basics <a class="hash" href="#exam-basics">#</a></h2>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Length</th>
+                    <td>
+                      60 multiple-choice questions, three answer choices each
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Time</th>
+                    <td>2 hours (most finish in ~60-90 minutes)</td>
+                  </tr>
+                  <tr>
+                    <th>Passing score</th>
+                    <td>70% (42 of 60 correct)</td>
+                  </tr>
+                  <tr>
+                    <th>Cost</th>
+                    <td>
+                      $175 at any PSI / FAA-approved knowledge testing center
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Test provider</th>
+                    <td>
+                      PSI Exams -
+                      <a
+                        href="https://faa.psiexams.com"
+                        target="_blank"
+                        rel="noopener"
+                        >faa.psiexams.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>ID required</th>
+                    <td>
+                      Government-issued photo ID with signature, current address
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Materials allowed</th>
+                    <td>
+                      FAA-supplied chart supplement booklet, calculator (no
+                      smart features), magnifying glass, plotter, E6B
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Retake policy</th>
+                    <td>Wait 14 days, full $175 fee again</td>
+                  </tr>
+                  <tr>
+                    <th>Validity</th>
+                    <td>
+                      24 months - complete free online recurrent training to
+                      stay current
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <h3>Approximate topic weight</h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Topic</th>
+                    <th>Approx. share of questions</th>
+                  </tr>
+                  <tr>
+                    <td>Regulations (Part 107)</td>
+                    <td>15-25%</td>
+                  </tr>
+                  <tr>
+                    <td>Airspace classification &amp; requirements</td>
+                    <td>15-25%</td>
+                  </tr>
+                  <tr>
+                    <td>Aviation weather sources &amp; effects</td>
+                    <td>11-16%</td>
+                  </tr>
+                  <tr>
+                    <td>Loading &amp; performance</td>
+                    <td>7-11%</td>
+                  </tr>
+                  <tr>
+                    <td>Operations (incl. ADM, physiology, radio)</td>
+                    <td>35-45%</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- MODULE GRID -->
+          <section id="modules">
+            <div class="card">
+              <h2>Knowledge modules <a class="hash" href="#modules">#</a></h2>
+              <p class="sub">
+                Click a tile to jump to that section. Modules are sequenced from
+                foundational rules to scenario-based ops.
+              </p>
+              <div class="modgrid">
+                <a class="modcard" href="#m-regs"
+                  ><div class="num">01</div>
+                  <div class="name">Regulations &amp; Certification</div>
+                  <div class="desc">
+                    Part 107 scope, eligibility, recurrent training, certificate
+                    process.
+                  </div></a
+                >
+                <a class="modcard" href="#m-airspace"
+                  ><div class="num">02</div>
+                  <div class="name">Airspace</div>
+                  <div class="desc">
+                    Class A-G, special use, TFRs, authorizations.
+                  </div></a
+                >
+                <a class="modcard" href="#m-charts"
+                  ><div class="num">03</div>
+                  <div class="name">Sectional Charts</div>
+                  <div class="desc">
+                    Read VFR sectionals, decode symbols, MEFs, lat/long.
+                  </div></a
+                >
+                <a class="modcard" href="#m-weather"
+                  ><div class="num">04</div>
+                  <div class="name">Weather</div>
+                  <div class="desc">
+                    METAR / TAF / SIGMET / AIRMET, microscale, fronts, density
+                    altitude.
+                  </div></a
+                >
+                <a class="modcard" href="#m-loading"
+                  ><div class="num">05</div>
+                  <div class="name">Loading &amp; Performance</div>
+                  <div class="desc">
+                    Weight, CG, payload, battery, density altitude effects.
+                  </div></a
+                >
+                <a class="modcard" href="#m-emerg"
+                  ><div class="num">06</div>
+                  <div class="name">Emergency Procedures</div>
+                  <div class="desc">
+                    Lost link, flyaway, LiPo fires, in-flight emergencies.
+                  </div></a
+                >
+                <a class="modcard" href="#m-crm"
+                  ><div class="num">07</div>
+                  <div class="name">CRM &amp; ADM</div>
+                  <div class="desc">
+                    PAVE / IMSAFE / DECIDE, hazardous attitudes &amp; antidotes.
+                  </div></a
+                >
+                <a class="modcard" href="#m-radio"
+                  ><div class="num">08</div>
+                  <div class="name">Radio Communications</div>
+                  <div class="desc">
+                    CTAF, position calls, phonetic alphabet, ATC interaction.
+                  </div></a
+                >
+                <a class="modcard" href="#m-physio"
+                  ><div class="num">09</div>
+                  <div class="name">Physiological Factors</div>
+                  <div class="desc">
+                    Vision, hypoxia, dehydration, fatigue, alcohol &amp; drugs.
+                  </div></a
+                >
+                <a class="modcard" href="#m-maint"
+                  ><div class="num">10</div>
+                  <div class="name">Maintenance &amp; Preflight</div>
+                  <div class="desc">
+                    Inspection process, manufacturer guidance, recordkeeping.
+                  </div></a
+                >
+                <a class="modcard" href="#m-ops"
+                  ><div class="num">11</div>
+                  <div class="name">Operations</div>
+                  <div class="desc">
+                    VLOS, night, over people/vehicles, moving vehicles, BVLOS.
+                  </div></a
+                >
+                <a class="modcard" href="#m-rid"
+                  ><div class="num">12</div>
+                  <div class="name">Remote ID &amp; Registration</div>
+                  <div class="desc">
+                    FAA DroneZone, Standard/Broadcast Module/FRIA, fees.
+                  </div></a
+                >
+                <a class="modcard" href="#m-waivers"
+                  ><div class="num">13</div>
+                  <div class="name">Waivers &amp; LAANC</div>
+                  <div class="desc">
+                    107.205 waivable sections, LAANC, UAS Facility Maps.
+                  </div></a
+                >
+                <a class="modcard" href="#m-accident"
+                  ><div class="num">14</div>
+                  <div class="name">Accident Reporting</div>
+                  <div class="desc">
+                    107.9 thresholds, 10-day rule, NTSB interface.
+                  </div></a
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- MODULE 1: REGS -->
+          <section id="m-regs">
+            <div class="card">
+              <h2>
+                1. Regulations &amp; Certification
+                <a class="hash" href="#m-regs">#</a>
+              </h2>
+              <p class="sub">
+                The hard limits that define a Part 107 operation. Memorize these
+                - they're easy points.
+              </p>
+
+              <h3>
+                Core operating limitations (14 CFR §107.51, .29, .31, .35)
+              </h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Rule</th>
+                    <th>Limit</th>
+                  </tr>
+                  <tr>
+                    <td>Max takeoff weight</td>
+                    <td>Less than 55 lb (incl. payload)</td>
+                  </tr>
+                  <tr>
+                    <td>Max groundspeed</td>
+                    <td>87 knots / 100 mph</td>
+                  </tr>
+                  <tr>
+                    <td>Max altitude</td>
+                    <td>
+                      400 ft AGL - <b>OR</b> within 400 ft of a structure, no
+                      higher than 400 ft above its uppermost limit
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Min visibility from control station</td>
+                    <td>3 statute miles</td>
+                  </tr>
+                  <tr>
+                    <td>Min distance from clouds</td>
+                    <td>500 ft below, 2,000 ft horizontal</td>
+                  </tr>
+                  <tr>
+                    <td>Visual line of sight (VLOS)</td>
+                    <td>
+                      Required at all times - by RP, visual observer, or person
+                      manipulating controls
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>One aircraft per remote pilot</td>
+                    <td>Yes (no swarm/multi-aircraft without waiver)</td>
+                  </tr>
+                  <tr>
+                    <td>Over people</td>
+                    <td>Allowed only per Category 1-4 rules (see Module 11)</td>
+                  </tr>
+                  <tr>
+                    <td>From a moving vehicle</td>
+                    <td>
+                      Only over sparsely populated areas (and not from an
+                      aircraft)
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>Eligibility &amp; certificate path</h3>
+              <ol>
+                <li>
+                  Be ≥ 16 years old, English-proficient, mentally/physically
+                  fit.
+                </li>
+                <li>
+                  Pass the FAA Part 107 initial knowledge test (UAG) at a PSI
+                  center.
+                </li>
+                <li>
+                  Complete FAA Form 8710-13 in
+                  <a href="https://iacra.faa.gov" target="_blank" rel="noopener"
+                    >IACRA</a
+                  >.
+                </li>
+                <li>TSA background check runs automatically.</li>
+                <li>
+                  FAA emails a temporary certificate (valid ~120 days);
+                  permanent card mailed within ~6-8 weeks.
+                </li>
+              </ol>
+
+              <h3>Recurrent training (every 24 calendar months)</h3>
+              <p>
+                Since 2021, recurrent currency is maintained by completing the
+                <b>free online ALC-677 course</b> on
+                <a
+                  href="https://www.faasafety.gov"
+                  target="_blank"
+                  rel="noopener"
+                  >FAASafety.gov</a
+                >
+                - no testing center, no fee. Save your completion certificate;
+                you must carry it (or have it accessible) when flying.
+              </p>
+
+              <div class="callout warn">
+                <b>Trap.</b> Hobbyists do <i>not</i> need a Part 107 - but if
+                you ever fly for compensation, social media monetization, or "in
+                furtherance of a business" (even unpaid), you do. The FAA's
+                interpretation is broad.
+              </div>
+            </div>
+          </section>
+
+          <!-- MODULE 2: AIRSPACE -->
+          <section id="m-airspace">
+            <div class="card">
+              <h2>
+                2. Airspace classification
+                <a class="hash" href="#m-airspace">#</a>
+              </h2>
+              <p class="sub">
+                Roughly a fifth of the test. Master the shape of each class and
+                what's required to fly there.
+              </p>
+
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Class</th>
+                    <th>Where</th>
+                    <th>Part 107 op?</th>
+                    <th>Authorization?</th>
+                  </tr>
+                  <tr>
+                    <td><b>A</b></td>
+                    <td>FL180 -> FL600</td>
+                    <td>Never - above 400 ft AGL limit</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td><b>B</b></td>
+                    <td>
+                      Surface -> 10,000 MSL around busiest airports (upside-down
+                      wedding cake)
+                    </td>
+                    <td>Yes</td>
+                    <td>ATC required (LAANC or DroneZone)</td>
+                  </tr>
+                  <tr>
+                    <td><b>C</b></td>
+                    <td>Surface -> 4,000 AGL around mid-tier airports</td>
+                    <td>Yes</td>
+                    <td>ATC required (LAANC)</td>
+                  </tr>
+                  <tr>
+                    <td><b>D</b></td>
+                    <td>Surface -> ~2,500 AGL around towered airports</td>
+                    <td>Yes</td>
+                    <td>ATC required (LAANC)</td>
+                  </tr>
+                  <tr>
+                    <td><b>E</b></td>
+                    <td>
+                      Controlled airspace above 700 or 1,200 AGL, or to surface
+                      near non-towered fields
+                    </td>
+                    <td>Yes</td>
+                    <td>
+                      Required only in Class E to the surface near an airport
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>G</b></td>
+                    <td>Uncontrolled - surface to base of overlying E</td>
+                    <td>Yes</td>
+                    <td>None required</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>How airspace appears on a sectional</h3>
+              <ul>
+                <li><b>Class B</b> - solid blue lines</li>
+                <li><b>Class C</b> - solid magenta lines</li>
+                <li><b>Class D</b> - dashed blue lines</li>
+                <li><b>Class E to surface</b> - dashed magenta lines</li>
+                <li>
+                  <b>Class E starting at 700 AGL</b> - magenta vignette (fuzzy
+                  edge)
+                </li>
+                <li><b>Class E starting at 1,200 AGL</b> - blue vignette</li>
+                <li>
+                  <b>Class G</b> - everything that isn't otherwise marked, up to
+                  the base of E
+                </li>
+              </ul>
+
+              <h3>Special-use airspace</h3>
+              <ul>
+                <li>
+                  <b>Prohibited Area (P-)</b> - flight prohibited (e.g., P-56
+                  over the White House).
+                </li>
+                <li>
+                  <b>Restricted Area (R-)</b> - flight restricted when active;
+                  check NOTAMs.
+                </li>
+                <li>
+                  <b>MOA</b> - military training; use extreme caution; not
+                  prohibited for Part 107 in most cases.
+                </li>
+                <li>
+                  <b>Warning Area (W-)</b> - over international water beyond 3
+                  nm.
+                </li>
+                <li>
+                  <b>Alert Area (A-)</b> - high concentration of training; both
+                  pilots responsible.
+                </li>
+                <li>
+                  <b>National Security UAS Flight Restrictions</b> - many
+                  federal facilities (DOE, Coast Guard, military bases). Always
+                  check B4UFLY.
+                </li>
+              </ul>
+
+              <h3>TFRs (Temporary Flight Restrictions)</h3>
+              <ul>
+                <li>
+                  <b>Stadium TFR</b> - 1 hour before to 1 hour after major
+                  sporting events:
+                  <b>3 nautical-mile radius, surface to 3,000 ft AGL</b>. NFL,
+                  MLB, NCAA Div I, NASCAR/Indy.
+                </li>
+                <li>
+                  <b>VIP movement</b> (presidential, etc.) - typically 30 nm
+                  with a 10 nm inner core.
+                </li>
+                <li>
+                  <b>Disaster/firefighting</b> - published as NOTAMs; violating
+                  one is a federal offense.
+                </li>
+                <li>
+                  Always brief
+                  <a href="https://tfr.faa.gov" target="_blank" rel="noopener"
+                    >tfr.faa.gov</a
+                  >
+                  and B4UFLY before launch.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- MODULE 3: CHARTS -->
+          <section id="m-charts">
+            <div class="card">
+              <h2>
+                3. Sectional charts <a class="hash" href="#m-charts">#</a>
+              </h2>
+              <p class="sub">
+                If you can fluently read a VFR sectional, you've already won 20%
+                of the test. Practice with real charts via SkyVector or VFRMap.
+              </p>
+
+              <h3>Latitude &amp; longitude</h3>
+              <ul>
+                <li>
+                  Latitude - horizontal lines running E-W, measured N/S of the
+                  equator (0° -> 90°).
+                </li>
+                <li>
+                  Longitude - vertical lines running N-S, measured E/W of the
+                  Prime Meridian.
+                </li>
+                <li>
+                  The U.S. is in the <b>Northern</b> and
+                  <b>Western</b> hemispheres.
+                </li>
+                <li>
+                  Tick marks on a sectional are 1 minute apart; 60 minutes = 1
+                  degree.
+                </li>
+              </ul>
+
+              <h3>Reading airspace ceilings &amp; floors</h3>
+              <p>
+                Class B/C/D segments are labeled with a <b>fraction</b>: top
+                number = ceiling, bottom number = floor, both in hundreds of
+                feet MSL. Examples:
+              </p>
+              <ul>
+                <li><code>100 / SFC</code> - surface to 10,000 ft MSL</li>
+                <li><code>50 / 20</code> - 2,000 ft MSL to 5,000 ft MSL</li>
+                <li><code>T</code> bottom = "top of underlying class"</li>
+              </ul>
+
+              <h3>Maximum Elevation Figure (MEF)</h3>
+              <p>
+                Each quadrangle on a sectional shows a large number representing
+                the highest obstacle or terrain in that area, in
+                <b>hundreds of feet MSL</b> (e.g., <code>2<sup>5</sup></code> =
+                2,500 ft MSL). Use it for terrain awareness - not directly for
+                the 400 ft AGL limit (AGL ≠ MSL).
+              </p>
+
+              <h3>Common symbols to recognize</h3>
+              <ul>
+                <li>
+                  <b>Airports</b> - magenta or blue circle/runway shape. Magenta
+                  = non-towered; blue = towered.
+                </li>
+                <li>
+                  <b>Star symbol</b> - airport beacon operates sunset to
+                  sunrise.
+                </li>
+                <li>
+                  <b>Obstacle</b> - single tower = <i>tower symbol</i> shape;
+                  group = double towers; lit obstacle has lightning bolts.
+                </li>
+                <li><b>Parachute jumping</b> - open parachute symbol.</li>
+                <li><b>Ultralight</b> - winged symbol.</li>
+                <li><b>Glider</b> - gliding symbol.</li>
+                <li><b>Hang glider</b> - kite shape.</li>
+                <li><b>VOR</b> - hexagonal compass rose.</li>
+                <li>
+                  <b>MTR</b> (Military Training Route) - gray line; 3-digit =
+                  above 1,500 AGL, 4-digit = at/below.
+                </li>
+              </ul>
+
+              <h3>Airport data block</h3>
+              <p>
+                For a typical sectional airport block:
+                <code
+                  >CTAF · Runway length (×100 ft) · L (lighting) ·
+                  Frequencies</code
+                >. Example: <code>118.4 · 50 L 122.95</code> = CTAF 118.4 MHz,
+                5,000 ft runway, lighted, Unicom 122.95.
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 4: WEATHER -->
+          <section id="m-weather">
+            <div class="card">
+              <h2>4. Weather <a class="hash" href="#m-weather">#</a></h2>
+              <p class="sub">
+                Decode aviation weather products, anticipate hazards, know your
+                sources.
+              </p>
+
+              <h3>Primary sources</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.aviationweather.gov"
+                    target="_blank"
+                    rel="noopener"
+                    >Aviation Weather Center (AWC)</a
+                  >
+                  - METARs, TAFs, AIRMETs, SIGMETs, PIREPs.
+                </li>
+                <li>
+                  <a
+                    href="https://www.1800wxbrief.com"
+                    target="_blank"
+                    rel="noopener"
+                    >1800wxbrief.com</a
+                  >
+                  - Leidos Flight Service for full briefings.
+                </li>
+                <li>FSS (Flight Service Station) - 1-800-WX-BRIEF.</li>
+                <li>NOAA, weather.gov for general public products.</li>
+              </ul>
+
+              <h3>METAR - current observation</h3>
+              <p>
+                Format:
+                <code
+                  >KSFO 121656Z 28012G18KT 10SM FEW020 SCT250 15/09 A3012 RMK
+                  …</code
+                >
+              </p>
+              <ul>
+                <li>Station ID -> KSFO</li>
+                <li>Day/time UTC ("Zulu") -> 12th @ 16:56 UTC</li>
+                <li>Wind -> 280° at 12 kt, gusting 18 kt</li>
+                <li>Visibility -> 10 statute miles</li>
+                <li>
+                  Clouds -> FEW (1-2 oktas) 2,000 AGL; SCT (3-4 oktas) 25,000
+                  AGL
+                </li>
+                <li>Temp/dew point -> 15°C / 9°C</li>
+                <li>Altimeter -> 30.12 inHg</li>
+              </ul>
+              <p>
+                Cloud coverage: <b>SKC/CLR</b> (clear) · <b>FEW</b> (1-2/8) ·
+                <b>SCT</b> (3-4/8) · <b>BKN</b> (5-7/8) · <b>OVC</b> (8/8). A
+                "ceiling" is the lowest BKN or OVC layer.
+              </p>
+
+              <h3>TAF - forecast (24-30 hr, large airports)</h3>
+              <p>
+                Reads like a METAR but with time groups:
+                <code>FM2200 22015G25KT 5SM BR …</code> means "from 22:00Z
+                conditions become …".
+              </p>
+
+              <h3>AIRMET vs. SIGMET</h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Product</th>
+                    <th>Severity</th>
+                    <th>Covers</th>
+                  </tr>
+                  <tr>
+                    <td>AIRMET Sierra</td>
+                    <td>Less severe</td>
+                    <td>IFR &amp; mountain obscuration</td>
+                  </tr>
+                  <tr>
+                    <td>AIRMET Tango</td>
+                    <td>Less severe</td>
+                    <td>Turbulence, surface winds &gt; 30 kt</td>
+                  </tr>
+                  <tr>
+                    <td>AIRMET Zulu</td>
+                    <td>Less severe</td>
+                    <td>Icing &amp; freezing levels</td>
+                  </tr>
+                  <tr>
+                    <td>SIGMET</td>
+                    <td>Severe - all aircraft</td>
+                    <td>
+                      Severe turbulence/icing, dust storms, volcanic ash, low
+                      visibility &lt; 3 SM widespread
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Convective SIGMET</td>
+                    <td>Severe - convection</td>
+                    <td>
+                      Embedded TS, line of TS, severe TS, hail ≥ 3/4", tornadoes
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>PIREP</h3>
+              <p>
+                Pilot Report - actual conditions reported by another pilot.
+                Useful for icing, turbulence, cloud tops. Format includes UA
+                (routine) or UUA (urgent).
+              </p>
+
+              <h3>Density altitude</h3>
+              <p>
+                Pressure altitude corrected for non-standard temperature.
+                <b>High DA = thin air = degraded performance.</b> A "high, hot,
+                humid" day reduces lift and motor thrust. Critical for
+                high-altitude or summer ops.
+              </p>
+
+              <h3>Common micro-scale hazards</h3>
+              <ul>
+                <li>
+                  <b>Thunderstorms</b> - never operate within 20 nm of a TS.
+                  Hazards: severe turbulence, hail, lightning, microbursts.
+                  Stages: cumulus -> mature -> dissipating.
+                </li>
+                <li>
+                  <b>Microburst</b> - small, intense downdraft (1-2 mi
+                  diameter); can last 5-15 min with 6,000 fpm downdrafts.
+                </li>
+                <li>
+                  <b>Wind shear</b> - sudden change in wind speed/direction;
+                  common near fronts, TS, and inversions.
+                </li>
+                <li>
+                  <b>Inversion</b> - temperature increases with altitude
+                  (opposite of normal); traps haze, smoke, smog.
+                </li>
+                <li>
+                  <b>Mountain wave</b> - turbulence downwind of ridges;
+                  lenticular clouds are a marker.
+                </li>
+              </ul>
+
+              <h3>Fronts</h3>
+              <ul>
+                <li>
+                  <b>Cold front</b> - fast, narrow band of TS/showers, brief but
+                  violent.
+                </li>
+                <li>
+                  <b>Warm front</b> - slow, wide area of low ceilings, drizzle,
+                  fog, possibly icing.
+                </li>
+                <li>
+                  <b>Occluded</b> - overtaking cold front; mixed conditions.
+                </li>
+                <li>
+                  <b>Stationary</b> - front not moving; extended adverse
+                  weather.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- MODULE 5: LOADING -->
+          <section id="m-loading">
+            <div class="card">
+              <h2>
+                5. Loading &amp; performance
+                <a class="hash" href="#m-loading">#</a>
+              </h2>
+              <p class="sub">
+                Why your drone flies differently with a payload, in heat, or at
+                altitude.
+              </p>
+
+              <h3>Weight &amp; balance basics</h3>
+              <ul>
+                <li>
+                  <b>Center of gravity (CG)</b> - the point at which the
+                  aircraft would balance. An off-CG drone is unstable and
+                  consumes more battery.
+                </li>
+                <li>
+                  <b>Adding payload</b> shifts CG; mount loads as close to the
+                  geometric center as possible.
+                </li>
+                <li>
+                  Heavier aircraft -> higher stall speed (fixed-wing), higher
+                  power demand, less endurance, longer braking/yaw stop time.
+                </li>
+              </ul>
+
+              <h3>Density altitude impacts</h3>
+              <p>
+                Performance decreases when <b>any</b> of these go up: altitude,
+                temperature, humidity. The combined effect is captured by
+                density altitude.
+              </p>
+              <ul>
+                <li>
+                  Rotor/propeller efficiency drops -> reduced thrust headroom.
+                </li>
+                <li>Battery voltage sag becomes more punishing.</li>
+                <li>
+                  Plan for shorter flight times, reduced payload capacity, and
+                  longer takeoff distances (for fixed-wing UAS).
+                </li>
+              </ul>
+
+              <h3>Battery considerations</h3>
+              <ul>
+                <li>
+                  <b>LiPo</b> - high energy density, fragile, fire risk if
+                  punctured, overcharged, or overdischarged.
+                </li>
+                <li>
+                  <b>Cold</b> reduces capacity sharply - warm packs to ~70°F
+                  before flight.
+                </li>
+                <li>
+                  Land with ≥ 20-30% reserve. RTH-on-low-battery is a feature,
+                  not a flight plan.
+                </li>
+                <li>
+                  Store at <b>storage charge</b> (~3.8 V/cell, ~50%) when not
+                  flying for &gt; 3 days.
+                </li>
+              </ul>
+
+              <h3>Wind &amp; performance</h3>
+              <p>
+                A drone's max wind tolerance is usually published in m/s;
+                convert to kt (1 m/s ≈ 1.94 kt). Headwinds increase ground
+                reference but reduce groundspeed; tailwinds the opposite.
+                Crosswinds increase battery draw as the FCS corrects.
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 6: EMERGENCY -->
+          <section id="m-emerg">
+            <div class="card">
+              <h2>
+                6. Emergency procedures <a class="hash" href="#m-emerg">#</a>
+              </h2>
+              <p class="sub">
+                You're the PIC. The FAA expects you to brief contingencies
+                before takeoff.
+              </p>
+
+              <h3>Lost link</h3>
+              <p>
+                If the C2 link drops, most consumer/prosumer aircraft execute a
+                programmed <b>Return-to-Home (RTH)</b>. Before flight: confirm
+                Home Point set, RTH altitude clears all obstacles, and the
+                aircraft has GPS lock.
+              </p>
+
+              <h3>Flyaway</h3>
+              <ul>
+                <li>Switch to manual / Atti mode if available.</li>
+                <li>Toggle RTH.</li>
+                <li>
+                  If unrecoverable, attempt to ditch in an unpopulated area;
+                  never let it drift over crowds, traffic, or buildings.
+                </li>
+                <li>
+                  Notify ATC if in/near controlled airspace; report per §107.9
+                  if damage/injury occurs.
+                </li>
+              </ul>
+
+              <h3>LiPo fire</h3>
+              <ul>
+                <li>Do <b>not</b> use water (lithium reacts).</li>
+                <li>
+                  Smother with sand, salt, or a Class D extinguisher; isolate
+                  from combustibles.
+                </li>
+                <li>
+                  Use a LiPo bag for transport and a fireproof container for
+                  charging.
+                </li>
+              </ul>
+
+              <h3>In-flight failure modes to brief</h3>
+              <ul>
+                <li>GPS loss - switch to Atti, fly visually, land soon.</li>
+                <li>
+                  Single motor failure - most multirotors will yaw
+                  uncontrollably; cut throttle to minimize property damage.
+                </li>
+                <li>
+                  Compass interference - recalibrate away from metal/rebar;
+                  abort if persists.
+                </li>
+                <li>
+                  Video link loss with control still active - fly by VLOS to
+                  recover.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- MODULE 7: CRM/ADM -->
+          <section id="m-crm">
+            <div class="card">
+              <h2>
+                7. Crew Resource Management &amp; ADM
+                <a class="hash" href="#m-crm">#</a>
+              </h2>
+              <p class="sub">
+                Heavily tested. The FAA wants pilots who think about decisions,
+                not just rules.
+              </p>
+
+              <h3>The 5 hazardous attitudes &amp; antidotes</h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Attitude</th>
+                    <th>Sounds like…</th>
+                    <th>Antidote</th>
+                  </tr>
+                  <tr>
+                    <td>Anti-authority</td>
+                    <td>"Don't tell me what to do."</td>
+                    <td>Follow the rules. They are usually right.</td>
+                  </tr>
+                  <tr>
+                    <td>Impulsivity</td>
+                    <td>"Do something - quickly!"</td>
+                    <td>Not so fast. Think first.</td>
+                  </tr>
+                  <tr>
+                    <td>Invulnerability</td>
+                    <td>"It won't happen to me."</td>
+                    <td>It could happen to me.</td>
+                  </tr>
+                  <tr>
+                    <td>Macho</td>
+                    <td>"I can do it."</td>
+                    <td>Taking chances is foolish.</td>
+                  </tr>
+                  <tr>
+                    <td>Resignation</td>
+                    <td>"What's the use?"</td>
+                    <td>I'm not helpless. I can make a difference.</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>PAVE - preflight risk checklist</h3>
+              <ul>
+                <li><b>P</b>ilot - fit to fly? Recent? Rest, IMSAFE.</li>
+                <li>
+                  <b>A</b>ircraft - airworthy? Battery, props, FW current?
+                </li>
+                <li>
+                  <b>e</b>nVironment - weather, airspace, terrain, lighting?
+                </li>
+                <li>
+                  <b>E</b>xternal pressures - client deadline?
+                  Get-the-shot-itis?
+                </li>
+              </ul>
+
+              <h3>IMSAFE - pilot self-assessment</h3>
+              <p>
+                Illness, Medication, Stress, Alcohol, Fatigue, Emotion / Eating.
+                If any are flagged, no-go.
+              </p>
+
+              <h3>DECIDE - in-flight decision loop</h3>
+              <p>
+                Detect -> Estimate -> Choose -> Identify -> Do -> Evaluate.
+                Iterate every time conditions change.
+              </p>
+
+              <h3>3 P's</h3>
+              <p>
+                Perceive (the hazards) -> Process (their consequences) ->
+                Perform (mitigations).
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 8: RADIO -->
+          <section id="m-radio">
+            <div class="card">
+              <h2>
+                8. Radio communications <a class="hash" href="#m-radio">#</a>
+              </h2>
+              <p class="sub">
+                Part 107 doesn't require radio use - but you must understand
+                pilot calls to maintain situational awareness near non-towered
+                fields.
+              </p>
+
+              <h3>CTAF procedure (non-towered)</h3>
+              <p>
+                Self-announcement format:
+                <i
+                  >"[Airport name] traffic, [callsign], [position],
+                  [intentions], [airport name]."</i
+                >
+                Standard reporting points: 10 mi out, entering pattern (45° to
+                downwind), downwind, base, final, clear of runway.
+              </p>
+
+              <h3>Phonetic alphabet (selected)</h3>
+              <p>
+                A-Alpha, B-Bravo, C-Charlie, D-Delta, E-Echo, F-Foxtrot, G-Golf,
+                H-Hotel, I-India, J-Juliet, K-Kilo, L-Lima, M-Mike, N-November,
+                O-Oscar, P-Papa, Q-Quebec, R-Romeo, S-Sierra, T-Tango,
+                U-Uniform, V-Victor, W-Whiskey, X-Xray, Y-Yankee, Z-Zulu.
+              </p>
+
+              <h3>Time references</h3>
+              <p>
+                All aviation weather/forecast products use <b>UTC ("Zulu")</b>.
+                EST = UTC − 5; EDT = UTC − 4; PST = UTC − 8; PDT = UTC − 7.
+              </p>
+
+              <h3>Reading runway numbers</h3>
+              <p>
+                Runways are numbered by magnetic heading ÷ 10.
+                <b>Runway 09</b> ≈ 090° (east). <b>Runway 27</b> ≈ 270° (west).
+                A single runway has two numbers, 180° apart (e.g., 09/27).
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 9: PHYSIO -->
+          <section id="m-physio">
+            <div class="card">
+              <h2>
+                9. Physiological factors <a class="hash" href="#m-physio">#</a>
+              </h2>
+              <p class="sub">
+                Even ground-based pilots can be impaired. The FAA tests this
+                seriously.
+              </p>
+
+              <h3>Vision</h3>
+              <ul>
+                <li>
+                  <b>Scanning</b> - move eyes in 10° sectors, pause briefly to
+                  focus. Continuous sweeping prevents focus.
+                </li>
+                <li>
+                  <b>Off-center viewing</b> - at night, look ~10° off the
+                  object; rods (peripheral) outperform cones.
+                </li>
+                <li>
+                  <b>Empty-field myopia</b> - eyes default-focus a few feet
+                  ahead when there's nothing to focus on (haze, fog). Force
+                  focus by looking at distant terrain.
+                </li>
+                <li>
+                  <b>Night adaptation</b> - takes ~30 minutes. White light
+                  destroys it; use red light.
+                </li>
+              </ul>
+
+              <h3>Hypoxia</h3>
+              <p>
+                Insufficient oxygen to the brain. Symptoms: cyanosis (blue
+                fingertips), headache, decreased reaction time, impaired
+                judgment, euphoria, tingling, dizziness. Most relevant for
+                high-altitude operations (uncommon for Part 107 but tested).
+              </p>
+
+              <h3>Hyperventilation</h3>
+              <p>
+                Rapid/deep breathing -> low CO₂ -> tingling, lightheadedness,
+                muscle spasms. <b>Antidote</b>: slow breathing, talk aloud,
+                breathe into a bag if needed.
+              </p>
+
+              <h3>Dehydration &amp; heat stress</h3>
+              <p>
+                Headache, fatigue, cramps, dizziness, decreased focus. Drink
+                water; rest in shade.
+              </p>
+
+              <h3>Alcohol &amp; drugs (14 CFR §91.17)</h3>
+              <ul>
+                <li><b>8 hours</b> bottle-to-throttle minimum.</li>
+                <li>Blood alcohol must be &lt; <b>0.04%</b>.</li>
+                <li>
+                  No operating while under the influence of any drug that
+                  impairs faculties.
+                </li>
+                <li>
+                  Many OTC meds (antihistamines, sleep aids) impair - read
+                  labels for "may cause drowsiness."
+                </li>
+              </ul>
+
+              <h3>Fatigue</h3>
+              <p>
+                Acute (one short night) vs. chronic (cumulative). Symptoms
+                mirror alcohol intoxication. Mitigation: rest, naps, hydration,
+                postponing flight.
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 10: MAINT -->
+          <section id="m-maint">
+            <div class="card">
+              <h2>
+                10. Maintenance &amp; preflight inspection
+                <a class="hash" href="#m-maint">#</a>
+              </h2>
+              <p class="sub">
+                Required before every flight under §107.49. No prescribed format
+                - use the manufacturer's.
+              </p>
+
+              <h3>The §107.49 checklist (paraphrased)</h3>
+              <ul>
+                <li>
+                  Assess operating environment - weather, airspace, hazards,
+                  persons not directly participating.
+                </li>
+                <li>
+                  Brief any crew (VO, payload operator) on intended op,
+                  contingencies, emergency procedures.
+                </li>
+                <li>
+                  Confirm <b>all control links</b> between control station and
+                  the sUAS are working.
+                </li>
+                <li>Verify there is enough power for the planned operation.</li>
+                <li>
+                  Confirm any object attached/carried is secure and does not
+                  adversely affect flight characteristics or controllability.
+                </li>
+              </ul>
+
+              <h3>Recordkeeping</h3>
+              <p>
+                Keep a flight log: aircraft S/N, FW version, flight time,
+                battery cycles, anomalies. Not legally required for hobby
+                flights but expected by clients and useful for incident
+                investigation.
+              </p>
+
+              <h3>Maintenance cadence (typical)</h3>
+              <ul>
+                <li>
+                  Pre-flight: visual inspection, prop integrity, firmware up to
+                  date, calibrations OK.
+                </li>
+                <li>
+                  Every 25 flight-hours: deep inspection of motors, gimbal,
+                  gimbal ribbon, props.
+                </li>
+                <li>
+                  Every 50-100 cycles: replace propellers, inspect bearings.
+                </li>
+                <li>
+                  Manufacturer-recommended intervals always override generic
+                  ones.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- MODULE 11: OPS -->
+          <section id="m-ops">
+            <div class="card">
+              <h2>11. Operations <a class="hash" href="#m-ops">#</a></h2>
+              <p class="sub">
+                The rules that change most often. As of 2026, here's the current
+                state.
+              </p>
+
+              <h3>Visual line of sight (VLOS, §107.31)</h3>
+              <p>
+                The Remote Pilot in Command (RPIC), person manipulating
+                controls, or a Visual Observer must maintain VLOS with the
+                aircraft <b>at all times</b> - sufficient to see orientation,
+                attitude, and surroundings without aids beyond corrective
+                lenses.
+              </p>
+
+              <h3>Night operations (post-April 2021)</h3>
+              <p>Allowed without a waiver, provided:</p>
+              <ul>
+                <li>
+                  Pilot has completed the updated initial test (post-April 2021)
+                  or recurrent training that includes night ops.
+                </li>
+                <li>
+                  Aircraft has anti-collision lighting visible for at least
+                  <b>3 statute miles</b>, with a flash rate sufficient to avoid
+                  a collision.
+                </li>
+              </ul>
+              <p>
+                "Civil twilight" rules no longer matter under the current rule -
+                same lighting applies for all dark conditions.
+              </p>
+
+              <h3>Operations over people (§107.39, Category 1-4)</h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Category</th>
+                    <th>What it allows</th>
+                    <th>Aircraft requirement</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Sustained flight over people</td>
+                    <td>
+                      ≤ 0.55 lb, no exposed rotating parts that can lacerate;
+                      Remote ID
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Sustained flight over people</td>
+                    <td>
+                      FAA-accepted Means of Compliance; severe injury &lt; 11
+                      ft-lb impact; Remote ID
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      Over people only briefly / not over open-air assemblies
+                    </td>
+                    <td>
+                      Severe injury &lt; 25 ft-lb impact; flight only over
+                      closed/restricted access site OR transient flight
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Sustained flight over people</td>
+                    <td>
+                      Aircraft with an airworthiness certificate;
+                      conditions/limitations per FAA
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>Operations over moving vehicles (§107.39(c))</h3>
+              <p>
+                Allowed under Categories 1-3 provided the aircraft remains
+                within or over a closed/restricted access site, or makes only
+                transient flight over moving vehicles. Category 4 must follow
+                the operating limitations on its airworthiness cert.
+              </p>
+
+              <h3>Over a human being</h3>
+              <p>
+                "Open-air assembly" (concerts, parades, protests) requires
+                Category 4 or a waiver. A single non-participant who briefly
+                walks under flight ≠ assembly, but you should still minimize.
+              </p>
+
+              <h3>From a moving vehicle (§107.25)</h3>
+              <p>
+                Permitted only over sparsely populated areas, and never from an
+                aircraft.
+              </p>
+
+              <h3>BVLOS</h3>
+              <p>
+                Beyond Visual Line of Sight requires a waiver under §107.205.
+                The forthcoming <b>Part 108</b> rulemaking (NPRM as of 2025)
+                will normalize BVLOS but is not yet final; until then, waivers
+                via DroneZone.
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 12: REMOTE ID -->
+          <section id="m-rid">
+            <div class="card">
+              <h2>
+                12. Remote ID &amp; registration
+                <a class="hash" href="#m-rid">#</a>
+              </h2>
+              <p class="sub">
+                Often missed in older study guides - fully enforced as of
+                September 16, 2023.
+              </p>
+
+              <h3>Registration (§48)</h3>
+              <ul>
+                <li>
+                  Required for any drone &gt; 0.55 lb (250 g) - and required for
+                  <b>all</b> Part 107 operations regardless of weight.
+                </li>
+                <li>Cost: <b>$5 per aircraft</b>, valid 3 years.</li>
+                <li>
+                  Register at
+                  <a
+                    href="https://faadronezone-access.faa.gov"
+                    target="_blank"
+                    rel="noopener"
+                    >FAA DroneZone</a
+                  >.
+                </li>
+                <li>
+                  Mark the registration number on the exterior of the aircraft.
+                </li>
+              </ul>
+
+              <h3>Remote ID - three compliance paths</h3>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Path</th>
+                    <th>What it is</th>
+                    <th>Where you can fly</th>
+                  </tr>
+                  <tr>
+                    <td><b>Standard Remote ID</b></td>
+                    <td>
+                      Drone has built-in Remote ID that broadcasts identity,
+                      location, altitude, control station location, time mark.
+                    </td>
+                    <td>Anywhere Part 107 ops are permitted.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Broadcast Module</b></td>
+                    <td>
+                      External transmitter attached to a non-Standard drone;
+                      broadcasts takeoff location instead of control station.
+                    </td>
+                    <td>
+                      VLOS-only operations (no FPV/long range without VO).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>FRIA</b> (FAA-Recognized Identification Area)</td>
+                    <td>
+                      Fly without Remote ID at all - limited to specific
+                      approved sites.
+                    </td>
+                    <td>Inside the FRIA only.</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h3>Broadcast data (what gets transmitted)</h3>
+              <ul>
+                <li>Drone serial number / session ID</li>
+                <li>Latitude, longitude, geometric altitude</li>
+                <li>Velocity</li>
+                <li>
+                  Control station lat/long (Standard RID) or takeoff lat/long
+                  (Broadcast Module)
+                </li>
+                <li>Time mark</li>
+                <li>Emergency status</li>
+              </ul>
+
+              <p>
+                Broadcast range: ~1 mi. Anyone with a Remote ID receiver app can
+                see your drone's broadcast (privacy implication).
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 13: WAIVERS -->
+          <section id="m-waivers">
+            <div class="card">
+              <h2>
+                13. Waivers, authorizations, &amp; LAANC
+                <a class="hash" href="#m-waivers">#</a>
+              </h2>
+              <p class="sub">
+                When you need to operate outside Part 107's defaults, here's the
+                menu.
+              </p>
+
+              <h3>Airspace authorization vs. waiver</h3>
+              <ul>
+                <li>
+                  <b>Airspace authorization</b> - permission to fly in
+                  controlled airspace (B/C/D/E-to-surface). Granted via LAANC or
+                  DroneZone. Routine, often instantaneous.
+                </li>
+                <li>
+                  <b>Waiver</b> - permission to deviate from a specific Part 107
+                  rule (e.g., night ops pre-2021, BVLOS, over people). Granted
+                  only via DroneZone; takes weeks.
+                </li>
+              </ul>
+
+              <h3>LAANC</h3>
+              <p>
+                Low Altitude Authorization and Notification Capability.
+                Real-time airspace authorization via approved apps (Aloft Air
+                Control, Skyward, AirHub, Avision). Uses
+                <b>UAS Facility Maps</b> that list the maximum altitudes ATC has
+                pre-approved at each grid square near a controlled airport. If
+                you fly at or below the gridded altitude, you get an instant
+                authorization.
+              </p>
+
+              <h3>Waivable sections (§107.205)</h3>
+              <ul>
+                <li>§107.25 - Operation from a moving vehicle/aircraft</li>
+                <li>§107.29 - Anti-collision lighting / lower visibility</li>
+                <li>§107.31 - Visual line of sight</li>
+                <li>§107.33 - Visual observer</li>
+                <li>§107.35 - One aircraft per RP</li>
+                <li>§107.37(a) - Yielding right of way</li>
+                <li>§107.39 - Operation over people (limited)</li>
+                <li>§107.41 - Operation in certain airspace</li>
+                <li>§107.51 - Operating limitations</li>
+              </ul>
+
+              <h3>Non-waivable</h3>
+              <p>
+                You cannot get a waiver to: carry hazardous materials (§107.36),
+                operate while impaired (§107.27/§91.17), exceed the 55 lb
+                threshold (that moves you to Part 91 entirely).
+              </p>
+            </div>
+          </section>
+
+          <!-- MODULE 14: ACCIDENT -->
+          <section id="m-accident">
+            <div class="card">
+              <h2>
+                14. Accident reporting <a class="hash" href="#m-accident">#</a>
+              </h2>
+              <p class="sub">
+                A frequent test question - know the thresholds and the timeline.
+              </p>
+
+              <h3>§107.9 - when to report to the FAA</h3>
+              <p>
+                Within <b>10 calendar days</b> of an operation that results in:
+              </p>
+              <ul>
+                <li>
+                  <b>Serious injury</b> to any person - or any loss of
+                  consciousness; OR
+                </li>
+                <li>
+                  <b>Damage to any property</b> (other than the sUAS itself)
+                  with a fair-market value or repair cost exceeding <b>$500</b>.
+                </li>
+              </ul>
+              <p>
+                File via
+                <a
+                  href="https://faadronezone-access.faa.gov"
+                  target="_blank"
+                  rel="noopener"
+                  >DroneZone</a
+                >
+                or by phone to the nearest FAA Flight Standards District Office
+                (FSDO).
+              </p>
+
+              <h3>NTSB notification (49 CFR §830.5)</h3>
+              <p>
+                The NTSB requires <i>immediate</i> notification - separate from
+                the FAA 10-day rule - for any accident involving substantial
+                damage or serious injury, regardless of whether the sUAS is
+                involved. For a typical Part 107 op this rarely triggers, but if
+                it does, call the NTSB regional office immediately.
+              </p>
+
+              <div class="callout warn">
+                <b>Don't conflate the two.</b> FAA = 10 days, paperwork. NTSB =
+                immediate phone call, reserved for serious incidents.
+              </div>
+            </div>
+          </section>
+
+          <!-- CHECKLISTS -->
+          <section id="checklist-registration">
+            <div class="card">
+              <h2>
+                Registration &amp; Remote ID checklist
+                <a class="hash" href="#checklist-registration">#</a>
+              </h2>
+              <ul class="checklist" data-checklist="registration">
+                <li>
+                  <input type="checkbox" id="r1" /><label for="r1"
+                    >Create an FAA DroneZone account at
+                    faadronezone-access.faa.gov</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r2" /><label for="r2"
+                    >Register the aircraft under Part 107 ($5 / 3 years)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r3" /><label for="r3"
+                    >Receive registration number; mark it on the exterior of the
+                    drone (legible)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r4" /><label for="r4"
+                    >Confirm Remote ID compliance path: Standard / Module /
+                    FRIA</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r5" /><label for="r5"
+                    >If using Standard RID, declare the aircraft's serial number
+                    / RID serial in DroneZone</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r6" /><label for="r6"
+                    >If using Broadcast Module, attach module and list its
+                    serial in DroneZone</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r7" /><label for="r7"
+                    >Verify Remote ID is broadcasting (test with a receiver app
+                    such as Drone Scanner or OpenDroneID)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="r8" /><label for="r8"
+                    >Carry Remote Pilot Certificate (digital OK) on every
+                    flight</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="checklist-preflight">
+            <div class="card">
+              <h2>
+                Preflight checklist (§107.49 compliant)
+                <a class="hash" href="#checklist-preflight">#</a>
+              </h2>
+              <ul class="checklist" data-checklist="preflight">
+                <li>
+                  <input type="checkbox" id="p1" /><label for="p1"
+                    >Check weather: METAR, TAF, AIRMET/SIGMET, winds aloft,
+                    TFRs</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p2" /><label for="p2"
+                    >Check airspace on B4UFLY / Aloft; request LAANC if
+                    controlled</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p3" /><label for="p3"
+                    >Brief any crew (VO, payload op) on op plan, comms,
+                    contingencies</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p4" /><label for="p4"
+                    >Inspect airframe: arms, frame, motor mounts, props</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p5" /><label for="p5"
+                    >Inspect propellers for nicks, cracks, secure
+                    mounting</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p6" /><label for="p6"
+                    >Inspect battery: voltage, swelling, contacts; firmware/cell
+                    balance</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p7" /><label for="p7"
+                    >Power on aircraft + RC; confirm firmware current</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p8" /><label for="p8"
+                    >Verify GPS lock, compass calibration, IMU</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p9" /><label for="p9"
+                    >Confirm RTH altitude clears all obstacles in op area</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p10" /><label for="p10"
+                    >Confirm Remote ID is broadcasting</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p11" /><label for="p11"
+                    >Verify control link, video link, telemetry</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p12" /><label for="p12"
+                    >Hover test 10-15 ft for 30 seconds; check controls in all
+                    axes</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="p13" /><label for="p13"
+                    >Maintain VLOS throughout op; reassess weather
+                    periodically</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="checklist-examday">
+            <div class="card">
+              <h2>
+                Exam day checklist
+                <a class="hash" href="#checklist-examday">#</a>
+              </h2>
+              <ul class="checklist" data-checklist="examday">
+                <li>
+                  <input type="checkbox" id="e1" /><label for="e1"
+                    >Sleep 7-8 hours the night before - do not cram</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e2" /><label for="e2"
+                    >Eat a real breakfast; hydrate; light caffeine</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e3" /><label for="e3"
+                    >Bring government-issued photo ID (with signature, current
+                    address)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e4" /><label for="e4"
+                    >Bring a second form of ID (passport, credit card)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e5" /><label for="e5"
+                    >Arrive 30 minutes early - find the building, restroom,
+                    parking</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e6" /><label for="e6"
+                    >Bring a simple, non-programmable calculator (or use the
+                    on-screen one)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e7" /><label for="e7"
+                    >Bring a magnifying glass and plotter if you find sectional
+                    charts hard to read</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e8" /><label for="e8"
+                    >Use the FAA supplement booklet at the test center - do
+                    <b>not</b> bring your own charts</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e9" /><label for="e9"
+                    >During the test: flag uncertain questions, answer easy ones
+                    first, return to flags</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e10" /><label for="e10"
+                    >For sectional questions: locate by lat/long FIRST, then
+                    read the symbol</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e11" /><label for="e11"
+                    >For METAR/TAF: decode top-to-bottom; circle the keyword the
+                    question asks about</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="e12" /><label for="e12"
+                    >After: save your printed score sheet - you'll need the exam
+                    ID for IACRA</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- RESOURCE DIRECTORY (FMHY-STYLE) -->
+          <section id="resources">
+            <div class="card">
+              <h2>
+                Curated resource directory
+                <a class="hash" href="#resources">#</a>
+              </h2>
+              <p class="sub">
+                Every link below has been hand-picked and verified. Prefer
+                official FAA sources first - they are the source of truth and
+                (mostly) free.
+              </p>
+
+              <div class="resgrid">
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">verified</span>
+                    Official FAA - Start here
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/training_testing/testing/acs/media/uas_acs.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >Remote Pilot ACS (PDF)</a
+                      >
+                      <span class="note"
+                        >The official knowledge-test roadmap. Read this
+                        first.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airman_testing/remote_pilot_study_guide.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA Remote Pilot Study Guide (PDF)</a
+                      >
+                      <span class="note">Official, free, ~80 pages.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107"
+                        target="_blank"
+                        rel="noopener"
+                        >14 CFR Part 107 (eCFR)</a
+                      >
+                      <span class="note">The actual regulation text.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_107-2A.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >AC 107-2A - Small Unmanned Aircraft Systems</a
+                      >
+                      <span class="note"
+                        >FAA advisory circular; the "how" behind the rule.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+                        target="_blank"
+                        rel="noopener"
+                        >Pilot's Handbook of Aeronautical Knowledge (PHAK)</a
+                      >
+                      <span class="note"
+                        >General aviation knowledge - weather, aerodynamics,
+                        ADM.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >Aviation Weather Handbook</a
+                      >
+                      <span class="note"
+                        >Deeper weather reference (FAA-H-8083-28).</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://faadronezone-access.faa.gov"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA DroneZone</a
+                      >
+                      <span class="note"
+                        >Registration, Remote ID, waivers, accident
+                        reports.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/uas/getting_started/b4ufly"
+                        target="_blank"
+                        rel="noopener"
+                        >B4UFLY app</a
+                      >
+                      <span class="note"
+                        >Pre-flight airspace and TFR check (free).</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://faa.maps.arcgis.com/apps/webappviewer/index.html?id=9c2e4406710048e19806ebf6a06754ad"
+                        target="_blank"
+                        rel="noopener"
+                        >UAS Facility Maps (UASFM)</a
+                      >
+                      <span class="note"
+                        >Per-grid pre-approved altitudes near controlled
+                        airports.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">map</span> Sectional
+                    charts &amp; chart reading
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/air_traffic/flight_info/aeronav/Digital_Products/aero_guide/"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA Aeronautical Chart Users' Guide</a
+                      ><span class="note"
+                        >The official legend and symbol reference for VFR
+                        sectionals.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/vfr/"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA VFR Raster Charts</a
+                      ><span class="note"
+                        >Current FAA sectional and terminal area chart
+                        downloads.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/air_traffic/flight_info/aeronav/productcatalog/vfrcharts/sectional/"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA Sectional Aeronautical Charts</a
+                      ><span class="note"
+                        >Official overview of sectional charts as the primary
+                        VFR navigation reference.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA Chart Supplement</a
+                      ><span class="note"
+                        >Airport and facility data that pairs with chart-reading
+                        questions.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://skyvector.com"
+                        target="_blank"
+                        rel="noopener"
+                        >SkyVector</a
+                      ><span class="note"
+                        >Fast web practice with real VFR sectionals.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://vfrmap.com"
+                        target="_blank"
+                        rel="noopener"
+                        >VFRMap.com</a
+                      ><span class="note"
+                        >Simple no-login sectional practice.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">menu_book</span> Free
+                    study courses &amp; guides
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://pilotinstitute.com/category/drones/"
+                        target="_blank"
+                        rel="noopener"
+                        >Pilot Institute - free articles</a
+                      ><span class="note"
+                        >Greg Reverdiau's site has many free deep-dives.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://3drpilot.com"
+                        target="_blank"
+                        rel="noopener"
+                        >3DR Pilot</a
+                      ><span class="note"
+                        >Free 200-question practice bank.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.dronepilotgroundschool.com/wp-content/uploads/2016/08/Study-Guide-Checklist_DPGS.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >Drone Pilot Ground School - free study guide</a
+                      ><span class="note">King Schools-affiliated.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://uavcoach.com/drone-certification/"
+                        target="_blank"
+                        rel="noopener"
+                        >UAV Coach - Part 107 guide</a
+                      ><span class="note">Long-form free guides.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.dartdrones.com/blog/"
+                        target="_blank"
+                        rel="noopener"
+                        >DARTdrones blog</a
+                      ><span class="note"
+                        >Practical articles for commercial pilots.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faasafety.gov/gslac/ALC/course_catalog.aspx"
+                        target="_blank"
+                        rel="noopener"
+                        >FAASafety.gov - ALC-677</a
+                      ><span class="note"
+                        >The free recurrent training course.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">quiz</span> Practice
+                    tests (free)
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/sites/faa.gov/files/training_testing/testing/test_questions/uag_questions.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >FAA UAG sample questions (PDF)</a
+                      ><span class="note"
+                        >Official FAA sample questions for the Remote Pilot
+                        knowledge test.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://pilotinstitute.com/part-107-practice-test/"
+                        target="_blank"
+                        rel="noopener"
+                        >Pilot Institute practice test</a
+                      ><span class="note"
+                        >Free 23-question practice exam with explanations.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://part107prep.co/"
+                        target="_blank"
+                        rel="noopener"
+                        >Part107Prep</a
+                      ><span class="note"
+                        >Free practice modes with explanations; no signup
+                        required.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://open-exam-prep.com/practice/faa-part-107"
+                        target="_blank"
+                        rel="noopener"
+                        >OpenExamPrep Part 107</a
+                      ><span class="note"
+                        >Large free question bank; no credit card
+                        required.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">smart_display</span>
+                    YouTube channels
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@TonyAndChelseaNorthrup"
+                        target="_blank"
+                        rel="noopener"
+                        >Tony &amp; Chelsea Northrup</a
+                      ><span class="note"
+                        >Free full Part 107 course (multiple hours).</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@PilotInstitute"
+                        target="_blank"
+                        rel="noopener"
+                        >Pilot Institute</a
+                      ><span class="note">Great chart-reading videos.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@51Drones"
+                        target="_blank"
+                        rel="noopener"
+                        >51 Drones</a
+                      ><span class="note"
+                        >Regulations, news, ops scenarios.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@DroneU"
+                        target="_blank"
+                        rel="noopener"
+                        >Drone U</a
+                      ><span class="note">Long-running training channel.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@AltitudeUniversity"
+                        target="_blank"
+                        rel="noopener"
+                        >Altitude University</a
+                      ><span class="note">FAA-focused walkthroughs.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable" id="apps">
+                  <h3>
+                    <span class="ico" aria-hidden="true">apps</span> Apps &amp;
+                    flight planning
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.aloft.ai/air-control"
+                        target="_blank"
+                        rel="noopener"
+                        >Aloft Air Control</a
+                      ><span class="note"
+                        >LAANC, airspace, flight log. iOS/Android.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://airmap.com"
+                        target="_blank"
+                        rel="noopener"
+                        >AirMap</a
+                      ><span class="note">LAANC, airspace alerts.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://skyvector.com"
+                        target="_blank"
+                        rel="noopener"
+                        >SkyVector</a
+                      ><span class="note"
+                        >Free sectional charts on the web.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://vfrmap.com"
+                        target="_blank"
+                        rel="noopener"
+                        >VFRMap.com</a
+                      ><span class="note">Free, no-login VFR sectionals.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.uavforecast.com"
+                        target="_blank"
+                        rel="noopener"
+                        >UAV Forecast</a
+                      ><span class="note"
+                        >Wind, weather, KP index for GPS quality.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.hover.to"
+                        target="_blank"
+                        rel="noopener"
+                        >Hover</a
+                      ><span class="note"
+                        >Weather + flight log for drone pilots.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://dronelogbook.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Drone Logbook</a
+                      ><span class="note">Pro-grade flight logging.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/uas/getting_started/b4ufly"
+                        target="_blank"
+                        rel="noopener"
+                        >B4UFLY</a
+                      ><span class="note"
+                        >Official FAA pre-flight check app.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">thunderstorm</span>
+                    Weather sources
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://aviationweather.gov"
+                        target="_blank"
+                        rel="noopener"
+                        >Aviation Weather Center</a
+                      ><span class="note">METARs, TAFs, AIRMETs, SIGMETs.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.1800wxbrief.com"
+                        target="_blank"
+                        rel="noopener"
+                        >1800wxbrief (Leidos)</a
+                      ><span class="note">Full flight briefing service.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://radar.weather.gov"
+                        target="_blank"
+                        rel="noopener"
+                        >NWS Radar</a
+                      ><span class="note">Convective awareness.</span>
+                    </li>
+                    <li>
+                      <a href="https://windy.com" target="_blank" rel="noopener"
+                        >Windy</a
+                      ><span class="note">Wind visualization at altitude.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.ventusky.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Ventusky</a
+                      ><span class="note">Alternative wind viz.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable" id="communities">
+                  <h3>
+                    <span class="ico" aria-hidden="true">forum</span>
+                    Communities
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://reddit.com/r/Part107"
+                        target="_blank"
+                        rel="noopener"
+                        >r/Part107</a
+                      ><span class="note"
+                        >Test prep, score reports, regulation Q&amp;A.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://reddit.com/r/drones"
+                        target="_blank"
+                        rel="noopener"
+                        >r/drones</a
+                      ><span class="note">General community.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://reddit.com/r/drone_business"
+                        target="_blank"
+                        rel="noopener"
+                        >r/drone_business</a
+                      ><span class="note">For pros, after you pass.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mavicpilots.com"
+                        target="_blank"
+                        rel="noopener"
+                        >MavicPilots forum</a
+                      ><span class="note"
+                        >Hardware-leaning but knowledgeable.</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://commercialdronepilots.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Commercial Drone Pilots Forum</a
+                      ><span class="note">Industry-focused.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">picture_as_pdf</span>
+                    Reference cheat-sheets (free PDFs)
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/media/04_phak_ch2.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >PHAK Ch. 2 - Airspace</a
+                      ><span class="note">FAA chapter PDF.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/phak/13_phak_ch11.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        >PHAK Ch. 11 - Weather Reports</a
+                      ><span class="note">METAR/TAF decoding.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+                        target="_blank"
+                        rel="noopener"
+                        >Aeronautical Information Manual (AIM)</a
+                      ><span class="note"
+                        >Reference for radio/airport procedures.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rescat searchable">
+                  <h3>
+                    <span class="ico" aria-hidden="true">payments</span> Paid
+                    courses (only if you want them)
+                  </h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://pilotinstitute.com/courses/part-107-made-easy/"
+                        target="_blank"
+                        rel="noopener"
+                        >Pilot Institute - Part 107 Made Easy</a
+                      ><span class="note">~$199; ~99% pass rate.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.dronepilotgroundschool.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Drone Pilot Ground School</a
+                      ><span class="note">~$299; King Schools network.</span>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.sportys.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Sporty's Pilot Shop</a
+                      ><span class="note">~$199; tablet-friendly.</span>
+                    </li>
+                    <li>
+                      <span class="note"
+                        ><i
+                          >You absolutely do not need a paid course to pass.</i
+                        >
+                        Many pass on FAA materials + this hub alone.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- QUIZ -->
+          <section id="quiz">
+            <div class="card">
+              <h2>Practice quiz <a class="hash" href="#quiz">#</a></h2>
+              <p class="sub">
+                Randomized FAA-style questions across all knowledge areas, with
+                rationales. Score 80%+ consistently before booking your test.
+              </p>
+              <div class="quiz-shell" id="quizShell">
+                <div class="quiz-progress"><div id="quizBar"></div></div>
+                <div class="quiz-meta">
+                  <span id="quizCount">Question 1</span>
+                  <span id="quizScore">Score: 0 / 0</span>
+                </div>
+                <div id="quizBody"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section id="faq">
+            <div class="card">
+              <h2>Part 107 FAQ <a class="hash" href="#faq">#</a></h2>
+              <p class="sub">
+                Quick answers to common FAA Remote Pilot Certificate study
+                questions.
+              </p>
+
+              <h3>What is the FAA Part 107 certificate?</h3>
+              <p>
+                The FAA Part 107 certificate, formally the Remote Pilot
+                Certificate, allows a person to operate small unmanned aircraft
+                systems for non-recreational purposes in the United States.
+              </p>
+
+              <h3>How many questions are on the Part 107 test?</h3>
+              <p>
+                The initial FAA Part 107 knowledge test has 60 multiple-choice
+                questions. A passing score is 70 percent or higher.
+              </p>
+
+              <h3>How much does the Part 107 test cost?</h3>
+              <p>
+                The FAA Part 107 initial knowledge test is commonly listed at
+                $175 at FAA-approved PSI testing centers.
+              </p>
+
+              <h3>What should I study most for the Part 107 test?</h3>
+              <p>
+                High-yield Part 107 study areas include airspace, sectional
+                chart reading, weather reports and forecasts, Part 107 operating
+                rules, Remote ID, crew resource management, and emergency
+                procedures.
+              </p>
+
+              <h3>Are sectional charts on the Part 107 test?</h3>
+              <p>
+                Yes. Part 107 applicants should know how to read VFR sectional
+                charts, including airspace boundaries, airport symbols, latitude
+                and longitude, maximum elevation figures, and charted hazards.
+              </p>
+
+              <h3>How long is Part 107 recurrent training valid?</h3>
+              <p>
+                Remote pilots must maintain currency by completing recurrent
+                training every 24 calendar months.
+              </p>
+            </div>
+          </section>
+
+          <!-- GLOSSARY -->
+          <section id="glossary">
+            <div class="card">
+              <h2>
+                Glossary (high-yield terms)
+                <a class="hash" href="#glossary">#</a>
+              </h2>
+              <div class="table-wrap">
+                <table>
+                  <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                  </tr>
+                  <tr>
+                    <td><b>AGL</b></td>
+                    <td>
+                      Above Ground Level - height above the surface directly
+                      below.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>MSL</b></td>
+                    <td>Mean Sea Level - height above average sea level.</td>
+                  </tr>
+                  <tr>
+                    <td><b>NOTAM</b></td>
+                    <td>
+                      Notice to Air Missions - official notice of any condition
+                      affecting flight.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>TFR</b></td>
+                    <td>Temporary Flight Restriction.</td>
+                  </tr>
+                  <tr>
+                    <td><b>CTAF</b></td>
+                    <td>
+                      Common Traffic Advisory Frequency at non-towered airports.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>VFR</b></td>
+                    <td>Visual Flight Rules - flight by outside reference.</td>
+                  </tr>
+                  <tr>
+                    <td><b>VLOS</b></td>
+                    <td>Visual Line of Sight.</td>
+                  </tr>
+                  <tr>
+                    <td><b>BVLOS</b></td>
+                    <td>Beyond Visual Line of Sight (waiver required).</td>
+                  </tr>
+                  <tr>
+                    <td><b>RPIC</b></td>
+                    <td>Remote Pilot in Command.</td>
+                  </tr>
+                  <tr>
+                    <td><b>sUAS</b></td>
+                    <td>Small Unmanned Aircraft System (&lt; 55 lb).</td>
+                  </tr>
+                  <tr>
+                    <td><b>LAANC</b></td>
+                    <td>
+                      Low Altitude Authorization and Notification Capability.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>FRIA</b></td>
+                    <td>
+                      FAA-Recognized Identification Area (no Remote ID needed
+                      inside).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>METAR</b></td>
+                    <td>Routine aerodrome weather observation.</td>
+                  </tr>
+                  <tr>
+                    <td><b>TAF</b></td>
+                    <td>Terminal Aerodrome Forecast.</td>
+                  </tr>
+                  <tr>
+                    <td><b>AIRMET</b></td>
+                    <td>Airmen's Meteorological Information (less severe).</td>
+                  </tr>
+                  <tr>
+                    <td><b>SIGMET</b></td>
+                    <td>Significant Meteorological Information (severe).</td>
+                  </tr>
+                  <tr>
+                    <td><b>PIREP</b></td>
+                    <td>Pilot Report.</td>
+                  </tr>
+                  <tr>
+                    <td><b>UA / UUA</b></td>
+                    <td>Routine / Urgent PIREP.</td>
+                  </tr>
+                  <tr>
+                    <td><b>MEF</b></td>
+                    <td>
+                      Maximum Elevation Figure (per sectional quadrangle).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>UTC / Zulu</b></td>
+                    <td>Universal Coordinated Time.</td>
+                  </tr>
+                  <tr>
+                    <td><b>ACS</b></td>
+                    <td>
+                      Airman Certification Standards - official test blueprint.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>IACRA</b></td>
+                    <td>FAA online certificate application portal.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- QC -->
+          <section id="qc">
+            <div class="card">
+              <h2>
+                Quality control checklist (before publishing)
+                <a class="hash" href="#qc">#</a>
+              </h2>
+              <p class="sub">
+                If you're contributing or maintaining a fork, run through this
+                before pushing.
+              </p>
+              <ul class="checklist" data-checklist="qc">
+                <li>
+                  <input type="checkbox" id="q1" /><label for="q1"
+                    >Every regulation cited matches the current eCFR (14 CFR
+                    Part 107)</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q2" /><label for="q2"
+                    >Every altitude / weight / distance / cost figure verified
+                    against FAA source</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q3" /><label for="q3"
+                    >Remote ID rules reflect the post-Sept 2023 enforcement
+                    state</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q4" /><label for="q4"
+                    >Night ops / Operations Over People rules reflect post-April
+                    2021 amendments</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q5" /><label for="q5"
+                    >Every external link returns 200 and points to an
+                    authoritative source</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q6" /><label for="q6"
+                    >Every practice question has a rationale that cites the rule
+                    or principle</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q7" /><label for="q7"
+                    >Practice questions cross-checked against the Remote Pilot
+                    ACS task codes</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q8" /><label for="q8"
+                    >A second human (ideally a current Part 107 holder) has
+                    reviewed the question bank</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q9" /><label for="q9"
+                    >Mobile rendering verified (≤ 380px) - checklists, tables,
+                    quiz</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q10" /><label for="q10"
+                    >Print stylesheet works for the checklists and exam-day
+                    strategy</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q11" /><label for="q11"
+                    >Disclaimer present that this is unofficial study
+                    material</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="q12" /><label for="q12"
+                    >Last-updated date is visible somewhere on the page</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- CONTRIBUTE -->
+          <section id="contribute">
+            <div class="card">
+              <h2>
+                Contribute &amp; fork <a class="hash" href="#contribute">#</a>
+              </h2>
+              <p>
+                This is a single self-contained <code>index.html</code> - drop
+                it in a GitHub Pages repo and you're live. To extend it:
+              </p>
+              <ul>
+                <li>
+                  <b>Add questions</b> - append objects to the
+                  <code>QUESTIONS</code> array in the script block at the bottom
+                  of the file.
+                </li>
+                <li>
+                  <b>Add resources</b> - add an <code>&lt;li&gt;</code> to the
+                  relevant <code>.rescat</code>.
+                </li>
+                <li>
+                  <b>Add modules</b> - duplicate any
+                  <code>&lt;section class="card"&gt;</code>; add a corresponding
+                  entry to the sidebar and the module grid.
+                </li>
+                <li>
+                  <b>Translate / localize</b> - text strings are inline; fork
+                  and translate freely.
+                </li>
+              </ul>
+              <p>
+                License philosophy: <b>free as in freedom</b>. Mirror it, fork
+                it, improve it. Credit and a link back are appreciated but not
+                required.
+              </p>
+              <div class="callout danger">
+                <b>Disclaimer.</b> This hub is unofficial study material
+                aggregated from public FAA sources and community knowledge. The
+                FAA Remote Pilot ACS is the authoritative source. Always verify
+                regulations against the current eCFR before relying on them for
+                an actual operation.
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <p>
+              Part107.wiki · Free &amp; open · Last updated: 2026 · Built in the
+              spirit of
+              <a href="https://fmhy.net" target="_blank" rel="noopener">FMHY</a
+              >.
+            </p>
+            <p><a href="#top">Back to top</a></p>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      /* ------------------------------ Theme ------------------------------ */
+      (function () {
+        const saved = localStorage.getItem("p107-theme");
+        if (saved) document.documentElement.setAttribute("data-theme", saved);
+        document.getElementById("themeToggle").addEventListener("click", () => {
+          const cur = document.documentElement.getAttribute("data-theme");
+          const next = cur === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", next);
+          localStorage.setItem("p107-theme", next);
+        });
+      })();
+
+      /* ------------------------------ Search ------------------------------ */
+      (function () {
+        const input = document.getElementById("search");
+        // sections to filter and link items inside
+        const sections = Array.from(document.querySelectorAll("section .card"));
+        const resCats = Array.from(document.querySelectorAll(".rescat"));
+        function run() {
+          const q = input.value.trim().toLowerCase();
+          if (!q) {
+            sections.forEach((s) => s.classList.remove("hide-by-search"));
+            resCats.forEach((r) => {
+              r.classList.remove("hide-by-search");
+              r.querySelectorAll("li").forEach((li) =>
+                li.classList.remove("hide-by-search"),
+              );
+            });
+            return;
+          }
+          sections.forEach((s) => {
+            const text = s.textContent.toLowerCase();
+            s.classList.toggle("hide-by-search", !text.includes(q));
+          });
+          resCats.forEach((cat) => {
+            let anyVisible = false;
+            cat.querySelectorAll("li").forEach((li) => {
+              const match = li.textContent.toLowerCase().includes(q);
+              li.classList.toggle("hide-by-search", !match);
+              if (match) anyVisible = true;
+            });
+            // if the category itself matches, show all its items
+            if (cat.querySelector("h3").textContent.toLowerCase().includes(q)) {
+              anyVisible = true;
+              cat
+                .querySelectorAll("li")
+                .forEach((li) => li.classList.remove("hide-by-search"));
+            }
+            cat.classList.toggle("hide-by-search", !anyVisible);
+          });
+        }
+        input.addEventListener("input", run);
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "/" && document.activeElement !== input) {
+            e.preventDefault();
+            input.focus();
+          }
+          if (e.key === "Escape" && document.activeElement === input) {
+            input.value = "";
+            run();
+            input.blur();
+          }
+        });
+      })();
+
+      /* ------------------------------ Sidebar active state ------------------------------ */
+      (function () {
+        const links = Array.from(
+          document.querySelectorAll(
+            '.sidebar a[href^="#"], .mobile-nav a[href^="#"]',
+          ),
+        );
+        const map = new Map();
+        links.forEach((a) => {
+          const id = a.getAttribute("href").slice(1);
+          const el = document.getElementById(id);
+          if (!el) return;
+          if (!map.has(el)) map.set(el, []);
+          map.get(el).push(a);
+        });
+        const obs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                links.forEach((l) => l.classList.remove("active"));
+                const activeLinks = map.get(e.target) || [];
+                activeLinks.forEach((link) => link.classList.add("active"));
+              }
+            });
+          },
+          { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
+        );
+        map.forEach((_, el) => obs.observe(el));
+      })();
+
+      /* ------------------------------ Checklist persistence ------------------------------ */
+      (function () {
+        document.querySelectorAll("ul.checklist").forEach((ul) => {
+          const name = ul.dataset.checklist || "default";
+          const key = `p107-cl-${name}`;
+          const state = JSON.parse(localStorage.getItem(key) || "{}");
+          ul.querySelectorAll("input[type=checkbox]").forEach((cb) => {
+            const id = cb.id;
+            if (state[id]) {
+              cb.checked = true;
+              cb.parentElement.classList.add("done");
+            }
+            cb.addEventListener("change", () => {
+              cb.parentElement.classList.toggle("done", cb.checked);
+              state[id] = cb.checked;
+              localStorage.setItem(key, JSON.stringify(state));
+            });
+          });
+        });
+      })();
+
+      /* ------------------------------ Practice quiz ------------------------------ */
+      const QUESTIONS = [
+        {
+          q: "What is the maximum allowable altitude for a small UAS operating under Part 107, with no nearby structures?",
+          options: ["200 feet AGL", "400 feet AGL", "500 feet MSL"],
+          answer: 1,
+          rationale:
+            "14 CFR §107.51(b): max 400 ft AGL, unless within a 400-ft horizontal radius of a structure, in which case you may fly up to 400 ft above the structure's uppermost limit.",
+        },
+        {
+          q: "To operate a small UAS in Class B airspace, the remote pilot must:",
+          options: [
+            "File a flight plan with ATC.",
+            "Receive ATC authorization (typically via LAANC or DroneZone).",
+            "Squawk 1200 on the aircraft transponder.",
+          ],
+          answer: 1,
+          rationale:
+            "§107.41 requires ATC authorization for any operation in B/C/D or Class E airspace designated for an airport. LAANC provides near-real-time authorization.",
+        },
+        {
+          q: "On a VFR sectional chart, Class C airspace is depicted by:",
+          options: [
+            "Solid blue lines.",
+            "Solid magenta lines.",
+            "Dashed magenta lines.",
+          ],
+          answer: 1,
+          rationale:
+            "Class B = solid blue. Class C = solid magenta. Class D = dashed blue. Class E to surface = dashed magenta.",
+        },
+        {
+          q: "A METAR includes the entry '24015G25KT'. This means:",
+          options: [
+            "Wind from 240° at 15 knots, gusting to 25 knots.",
+            "Wind from 015° at 25 knots, gusting to 240 knots.",
+            "Wind from 240° at 25 knots, no gusts.",
+          ],
+          answer: 0,
+          rationale:
+            "Wind groups read direction (degrees true) / speed (kt) / gust. 240° / 15 kt, gusting 25 kt.",
+        },
+        {
+          q: "What is the minimum flight visibility required for sUAS operations under Part 107?",
+          options: ["1 statute mile.", "3 statute miles.", "5 statute miles."],
+          answer: 1,
+          rationale:
+            "§107.51(c): minimum 3 statute miles of flight visibility from the control station.",
+        },
+        {
+          q: "How long is an FAA UAS registration valid?",
+          options: ["1 year.", "3 years.", "5 years."],
+          answer: 1,
+          rationale: "Part 48 - Part 107 registration: $5, valid 3 years.",
+        },
+        {
+          q: "An accident occurs that causes $700 in damage to property other than the UAS, with no injuries. The remote pilot must report this to the FAA within:",
+          options: ["24 hours.", "72 hours.", "10 calendar days."],
+          answer: 2,
+          rationale:
+            "§107.9: report within 10 calendar days if damage to other property exceeds $500 in fair-market value or repair cost, OR if there is any serious injury or loss of consciousness.",
+        },
+        {
+          q: "Under §91.17, the maximum allowable blood alcohol concentration to operate any aircraft is:",
+          options: ["0.02%", "0.04%", "0.08%"],
+          answer: 1,
+          rationale:
+            "§91.17: no person may act as a crewmember with a BAC of 0.04% or greater, within 8 hours of consuming alcohol, or while under the influence.",
+        },
+        {
+          q: "Convective SIGMETs are issued for which of the following?",
+          options: [
+            "Moderate icing and turbulence.",
+            "Embedded thunderstorms, lines of thunderstorms, severe TS, hail ≥ 3/4 inch, or tornadoes.",
+            "Mountain obscuration.",
+          ],
+          answer: 1,
+          rationale:
+            "Convective SIGMETs cover severe convective phenomena. Less-severe icing/turbulence is AIRMET territory.",
+        },
+        {
+          q: "On a sectional, the number '25' inside a square in the middle of a quadrangle represents:",
+          options: [
+            "The maximum altitude allowed under Part 107.",
+            "The Maximum Elevation Figure - 2,500 ft MSL.",
+            "The CTAF frequency 25.0 MHz.",
+          ],
+          answer: 1,
+          rationale:
+            "The MEF is the highest terrain or obstacle in the quadrangle, in hundreds of feet MSL.",
+        },
+        {
+          q: "Which of the following best describes the hazardous attitude 'impulsivity'?",
+          options: [
+            '"Don\'t tell me what to do."',
+            '"Do something - quickly!"',
+            '"It won\'t happen to me."',
+          ],
+          answer: 1,
+          rationale:
+            "Impulsivity = act first, think later. Antidote: 'Not so fast. Think first.'",
+        },
+        {
+          q: "Density altitude increases when:",
+          options: [
+            "Temperature decreases and pressure increases.",
+            "Altitude, temperature, and humidity increase.",
+            "Wind increases.",
+          ],
+          answer: 1,
+          rationale:
+            "High, hot, and humid all raise density altitude, degrading propeller and motor performance.",
+        },
+        {
+          q: "A stadium TFR for major sporting events extends:",
+          options: [
+            "1 nm radius, surface to 1,000 ft AGL, 30 minutes before to 30 minutes after.",
+            "3 nm radius, surface to 3,000 ft AGL, 1 hour before to 1 hour after.",
+            "5 nm radius, surface to 5,000 ft AGL, 2 hours before to 2 hours after.",
+          ],
+          answer: 1,
+          rationale:
+            "Standing stadium TFR (NOTAM FDC 4/3621): 3 nm radius, surface to 3,000 ft AGL, 1 hour before to 1 hour after MLB, NFL, NCAA Division I football, and major motor speedway events at venues seating 30,000+.",
+        },
+        {
+          q: "How often must a Part 107 remote pilot complete recurrent training to maintain currency?",
+          options: [
+            "Every 12 calendar months.",
+            "Every 24 calendar months.",
+            "Every 36 calendar months.",
+          ],
+          answer: 1,
+          rationale:
+            "Since April 2021, recurrent currency is maintained by completing the free FAA online course (ALC-677) every 24 calendar months - no testing center required.",
+        },
+        {
+          q: "Night operations under Part 107 require anti-collision lighting visible from at least:",
+          options: ["1 statute mile.", "3 statute miles.", "5 statute miles."],
+          answer: 1,
+          rationale:
+            "§107.29(b): anti-collision lights visible for at least 3 SM with a flash rate sufficient to avoid collision.",
+        },
+        {
+          q: "A drone weighing 0.45 lb wishes to fly directly over a non-participating person who is not under cover. The remote pilot:",
+          options: [
+            "May fly over the person under Category 1 if the aircraft has no exposed rotating parts that can lacerate skin and is Remote ID-compliant.",
+            "May not fly over the person under any circumstance.",
+            "Must request a waiver under §107.205.",
+          ],
+          answer: 0,
+          rationale:
+            "§107.39 Category 1: aircraft ≤ 0.55 lb with no exposed parts that can lacerate human skin and meets Remote ID requirements may operate over people.",
+        },
+        {
+          q: "Which of the following is required on the exterior of every registered drone?",
+          options: [
+            "The remote pilot's name.",
+            "The FAA-issued registration number.",
+            "The aircraft's serial number in red ink.",
+          ],
+          answer: 1,
+          rationale:
+            "14 CFR §48.205 requires the registration number to be legibly marked on the exterior.",
+        },
+        {
+          q: "Class G airspace generally extends from the surface up to:",
+          options: [
+            "The base of overlying controlled airspace (often 700 or 1,200 AGL).",
+            "10,000 ft MSL.",
+            "Class A airspace at FL180.",
+          ],
+          answer: 0,
+          rationale:
+            "Class G is uncontrolled airspace; it tops out at the base of the overlying Class E.",
+        },
+        {
+          q: "A 'sustained flight' over an open-air assembly of people is permitted under Part 107 only with:",
+          options: [
+            "A Category 1 aircraft.",
+            "A Category 4 aircraft (with airworthiness certificate) or a waiver.",
+            "Standard Remote ID alone.",
+          ],
+          answer: 1,
+          rationale:
+            "§107.145: sustained flight over open-air assemblies requires Cat 4 (airworthiness cert) or a §107.205 waiver.",
+        },
+        {
+          q: "What does 'BKN025' in a METAR indicate?",
+          options: [
+            "Broken clouds with a base 2,500 ft AGL.",
+            "Visibility 25 nm in broken haze.",
+            "Wind broken at 25 kt.",
+          ],
+          answer: 0,
+          rationale:
+            "BKN = 5-7 oktas (broken); the three-digit number is base height in hundreds of feet AGL -> 2,500 ft AGL. A BKN/OVC layer defines the ceiling.",
+        },
+        {
+          q: "The phonetic letters for 'P-A-C' are:",
+          options: [
+            "Papa-Alpha-Charlie.",
+            "Peter-Apple-Cat.",
+            "Pacific-Alpha-Charlie.",
+          ],
+          answer: 0,
+          rationale: "ICAO phonetic alphabet: P=Papa, A=Alpha, C=Charlie.",
+        },
+        {
+          q: "What action should a remote pilot take if the control link to the sUAS is lost?",
+          options: [
+            "Wait for the aircraft to land on its own, then walk away.",
+            "Allow programmed Return-to-Home to execute, monitor visually, and be ready to manually recover if RTH fails.",
+            "Immediately contact the nearest air traffic control facility.",
+          ],
+          answer: 1,
+          rationale:
+            "Lost-link procedures typically trigger an RTH; the pilot remains responsible for outcomes and must visually monitor. Notify ATC only if operating in/near controlled airspace.",
+        },
+        {
+          q: "The acronym IMSAFE is used for:",
+          options: [
+            "A pre-flight aircraft inspection mnemonic.",
+            "A pilot self-assessment for fitness to fly.",
+            "An emergency communication code.",
+          ],
+          answer: 1,
+          rationale:
+            "IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Emotion/Eating - a personal fitness checklist before operating.",
+        },
+        {
+          q: "At a non-towered airport, position reports are broadcast on:",
+          options: [
+            "121.5 MHz (emergency).",
+            "The Common Traffic Advisory Frequency (CTAF).",
+            "Ground frequency 121.9 MHz.",
+          ],
+          answer: 1,
+          rationale:
+            "CTAF is the designated frequency for self-announcement at non-towered fields. A Part 107 pilot is not required to broadcast but should monitor.",
+        },
+        {
+          q: "A 'warm front' typically brings:",
+          options: [
+            "Narrow, intense thunderstorms.",
+            "A wide area of low ceilings, drizzle, fog, and possible icing.",
+            "Severe clear-air turbulence with no clouds.",
+          ],
+          answer: 1,
+          rationale:
+            "Warm fronts advance slowly; warm moist air overrides cooler air, producing stratiform clouds, drizzle, low ceilings, and fog. Cold fronts produce the narrow, intense convective lines.",
+        },
+        {
+          q: "Which item is required by §107.49 before initiating flight?",
+          options: [
+            "A medical certificate.",
+            "Verifying that all control links between control station and the sUAS are functioning properly.",
+            "Filing a flight plan with the FAA.",
+          ],
+          answer: 1,
+          rationale:
+            "§107.49 lists pre-flight assessment requirements including verifying control link functionality, ensuring sufficient power, briefing crew, and confirming any attached object is secure.",
+        },
+        {
+          q: "Standard Remote ID broadcasts which of the following?",
+          options: [
+            "The drone's serial number, position, altitude, velocity, control station location, time mark, and emergency status.",
+            "Only the operator's name and address.",
+            "Only the drone's location, encrypted to the FAA.",
+          ],
+          answer: 0,
+          rationale:
+            "Per Part 89, Standard Remote ID broadcasts the listed elements unencrypted on a public Bluetooth/Wi-Fi channel.",
+        },
+        {
+          q: "A Maximum Elevation Figure of '34' on a sectional means the highest obstacle/terrain in that quadrangle is approximately:",
+          options: ["34 ft MSL.", "340 ft MSL.", "3,400 ft MSL."],
+          answer: 2,
+          rationale:
+            "MEF is shown in thousands + hundreds of feet MSL; '3⁴' is 3,400 ft MSL.",
+        },
+        {
+          q: "A remote pilot wants to operate at night near a Class D airport. Required:",
+          options: [
+            "ATC authorization (LAANC or DroneZone) and anti-collision lights visible 3 SM.",
+            "Anti-collision lights only; no ATC authorization needed at night.",
+            "A §107.205 waiver for night operations.",
+          ],
+          answer: 0,
+          rationale:
+            "Night ops post-April 2021 require only anti-collision lighting; airspace authorization is still required for any operation in B/C/D/E-to-surface, day or night.",
+        },
+        {
+          q: "You see a magenta dashed line surrounding a non-towered airport on a sectional. This represents:",
+          options: [
+            "Class E airspace extending to the surface.",
+            "Class D airspace.",
+            "A military operations area.",
+          ],
+          answer: 0,
+          rationale:
+            "Dashed magenta = Class E airspace extending to the surface (typically because of IFR approaches at the underlying field). Part 107 ops here require ATC authorization.",
+        },
+        {
+          q: "On a VFR sectional, Class D airspace is shown with:",
+          options: [
+            "Dashed blue lines.",
+            "Solid magenta lines.",
+            "Blue shaded vignette.",
+          ],
+          answer: 0,
+          rationale:
+            "Class D airspace is depicted by dashed blue lines around towered airports.",
+        },
+        {
+          q: "A fuzzy magenta vignette around an area on a sectional generally indicates:",
+          options: [
+            "Class E airspace begins at 700 ft AGL.",
+            "Class B airspace begins at the surface.",
+            "A prohibited area.",
+          ],
+          answer: 0,
+          rationale:
+            "A magenta vignette indicates Class E beginning at 700 ft AGL. A blue vignette indicates Class E beginning at 1,200 ft AGL.",
+        },
+        {
+          q: "A blue airport symbol on a sectional generally indicates:",
+          options: [
+            "A towered airport.",
+            "A non-towered airport.",
+            "A private-use airport only.",
+          ],
+          answer: 0,
+          rationale:
+            "Blue airport symbols identify towered airports; magenta airport symbols identify non-towered airports.",
+        },
+        {
+          q: "In a sectional airport data block, CTAF refers to:",
+          options: [
+            "The frequency used for traffic advisories at a non-towered airport.",
+            "The airport elevation in hundreds of feet.",
+            "The runway length in hundreds of feet.",
+          ],
+          answer: 0,
+          rationale:
+            "CTAF is the Common Traffic Advisory Frequency used for self-announcing and monitoring traffic at non-towered airports.",
+        },
+        {
+          q: "On a sectional, latitude lines run:",
+          options: [
+            "East-west and are measured north or south of the equator.",
+            "North-south and are measured east or west of the Prime Meridian.",
+            "Only around controlled airport airspace.",
+          ],
+          answer: 0,
+          rationale:
+            "Latitude lines run east-west and measure north/south position. Longitude lines run north-south and measure east/west position.",
+        },
+        {
+          q: "Tick marks along sectional chart latitude/longitude lines are typically spaced:",
+          options: [
+            "1 minute apart.",
+            "5 degrees apart.",
+            "10 nautical miles apart.",
+          ],
+          answer: 0,
+          rationale:
+            "Sectional chart tick marks are 1 minute apart; 60 minutes equals 1 degree.",
+        },
+        {
+          q: "An airspace label of '50 / 20' on a sectional means:",
+          options: [
+            "Floor 2,000 ft MSL, ceiling 5,000 ft MSL.",
+            "Floor 500 ft AGL, ceiling 2,000 ft AGL.",
+            "Runway 20 is 5,000 ft long.",
+          ],
+          answer: 0,
+          rationale:
+            "Airspace shelves use hundreds of feet MSL: top number is ceiling, bottom number is floor. 50/20 means 5,000 MSL over 2,000 MSL.",
+        },
+        {
+          q: "A Military Training Route shown with a four-digit route number generally indicates:",
+          options: [
+            "Operations at or below 1,500 ft AGL.",
+            "Operations only above 18,000 ft MSL.",
+            "A prohibited area where flight is never allowed.",
+          ],
+          answer: 0,
+          rationale:
+            "Four-digit MTR route numbers generally indicate activity at or below 1,500 ft AGL; three-digit routes are generally above 1,500 ft AGL.",
+        },
+      ];
+
+      (function () {
+        const shell = document.getElementById("quizShell");
+        const body = document.getElementById("quizBody");
+        const bar = document.getElementById("quizBar");
+        const count = document.getElementById("quizCount");
+        const scoreEl = document.getElementById("quizScore");
+        let quizQuestions = [];
+        let idx = 0,
+          score = 0,
+          answered = false;
+
+        function shuffle(items) {
+          const shuffled = [...items];
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+          }
+          return shuffled;
+        }
+
+        function prepareQuiz() {
+          quizQuestions = shuffle(QUESTIONS).map((question) => {
+            const options = question.options.map((option, index) => ({
+              option,
+              originalIndex: index,
+            }));
+            const shuffledOptions = shuffle(options);
+            return {
+              ...question,
+              options: shuffledOptions.map((item) => item.option),
+              answer: shuffledOptions.findIndex(
+                (item) => item.originalIndex === question.answer,
+              ),
+            };
+          });
+          idx = 0;
+          score = 0;
+        }
+
+        function render() {
+          if (idx >= quizQuestions.length) return renderResult();
+          const q = quizQuestions[idx];
+          answered = false;
+          count.textContent = `Question ${idx + 1} of ${quizQuestions.length}`;
+          scoreEl.textContent = `Score: ${score} / ${idx}`;
+          bar.style.width = `${(idx / quizQuestions.length) * 100}%`;
+          body.innerHTML = `
+      <p class="quiz-q">${q.q}</p>
+      <div class="quiz-options">
+        ${q.options.map((o, i) => `<button class="quiz-opt" data-i="${i}">${String.fromCharCode(65 + i)}. ${o}</button>`).join("")}
+      </div>
+      <div class="quiz-rationale" id="rationale"><b>Rationale:</b> ${q.rationale}</div>
+      <div class="quiz-controls">
+        <button class="btn btn-ghost" id="quizRestart">Restart</button>
+        <button class="btn btn-primary" id="quizNext" disabled>Next</button>
+      </div>
+    `;
+          body.querySelectorAll(".quiz-opt").forEach((btn) => {
+            btn.addEventListener("click", () => {
+              if (answered) return;
+              answered = true;
+              const i = +btn.dataset.i;
+              const correct = i === q.answer;
+              if (correct) score++;
+              body.querySelectorAll(".quiz-opt").forEach((b, j) => {
+                b.disabled = true;
+                if (j === q.answer) b.classList.add("correct");
+                else if (j === i) b.classList.add("wrong");
+              });
+              document.getElementById("rationale").classList.add("show");
+              document.getElementById("quizNext").disabled = false;
+              scoreEl.textContent = `Score: ${score} / ${idx + 1}`;
+            });
+          });
+          document.getElementById("quizNext").addEventListener("click", () => {
+            idx++;
+            render();
+          });
+          document
+            .getElementById("quizRestart")
+            .addEventListener("click", () => {
+              prepareQuiz();
+              render();
+            });
+        }
+
+        function renderResult() {
+          bar.style.width = "100%";
+          count.textContent = `Complete · ${quizQuestions.length} questions`;
+          const pct = Math.round((score / quizQuestions.length) * 100);
+          const passed = pct >= 70;
+          body.innerHTML = `
+      <div class="quiz-result">
+        <div class="score">${pct}%</div>
+        <div class="pf">${score} of ${quizQuestions.length} correct · ${passed ? '<span style="color:var(--accent-2)">Passing on a real FAA test (70%+)</span>' : '<span style="color:var(--danger)">Below FAA passing mark</span>'}</div>
+        <p style="color:var(--text-dim)">${passed ? "Looking good - drill the topics you missed and aim for 85%+ consistently before booking." : "Review the modules above for the topics you missed, then retry."}</p>
+        <div style="margin-top:14px"><button class="btn btn-primary" id="quizRestart2">Retake quiz</button></div>
+      </div>
+    `;
+          document
+            .getElementById("quizRestart2")
+            .addEventListener("click", () => {
+              prepareQuiz();
+              render();
+            });
+        }
+
+        prepareQuiz();
+        render();
+      })();
+    </script>
+  </body>
+</html>
